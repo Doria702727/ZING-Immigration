@@ -34,39 +34,24 @@ html:not([data-portable-source-tooltips-ready]) .portable-chart-summary>.portabl
 </style>
 <style id="zing-table-fit">
 @media screen {
-  .portable-page-meta,#data-analytics-portable-reader .portable-page-meta,#data-analytics-portable-reader .analytics-top-bar-freshness {display:none !important;}
-  .portable-table-source-region,.portable-table-scroll,
-  #data-analytics-portable-reader .table-scroll-shell,
-  #data-analytics-portable-reader .table-wrap,
-  #data-analytics-portable-reader .table-scroll-content {width:100% !important;max-width:100% !important;}
+  .portable-page-meta,#data-analytics-portable-reader .portable-page-meta,#data-analytics-portable-reader .analytics-top-bar-freshness,#data-analytics-portable-reader .top-bar-refresh-button.analytics-reader-freshness {display:none !important;}
+  .portable-table-source-region,.portable-table-scroll,#data-analytics-portable-reader .table-scroll-shell,#data-analytics-portable-reader .table-wrap,#data-analytics-portable-reader .table-scroll-content {width:100% !important;max-width:100% !important;}
   .portable-table-scroll,#data-analytics-portable-reader .table-wrap {overflow:visible !important;}
   .portable-table-scroll table,#data-analytics-portable-reader .data-table {width:100% !important;max-width:100% !important;min-width:0 !important;table-layout:fixed !important;}
-  .portable-table-scroll th,.portable-table-scroll td,
-  #data-analytics-portable-reader .data-table th,
-  #data-analytics-portable-reader .data-table td {padding:8px 6px 8px 0 !important;white-space:normal !important;overflow:visible !important;text-overflow:clip !important;overflow-wrap:anywhere !important;word-break:normal !important;font-size:11px !important;line-height:16px !important;vertical-align:top !important;}
+  .portable-table-scroll th,.portable-table-scroll td,#data-analytics-portable-reader .data-table th,#data-analytics-portable-reader .data-table td {padding:8px 6px 8px 0 !important;white-space:normal !important;overflow:visible !important;text-overflow:clip !important;overflow-wrap:anywhere !important;word-break:normal !important;font-size:11px !important;line-height:16px !important;vertical-align:top !important;}
   #data-analytics-portable-reader .data-table col,#data-analytics-portable-reader .data-table th {width:auto !important;}
   #data-analytics-portable-reader .table-sort-button {width:100% !important;min-width:0 !important;white-space:normal !important;overflow-wrap:anywhere !important;}
-  [data-artifact-block-id="category_table_block"] .portable-visual-header h2,
-  #data-analytics-portable-reader [data-artifact-block-id="category_table_block"] .portable-visual-header h2 {font-size:16px !important;line-height:24px !important;}
-  [data-artifact-block-id="category_table_block"] .data-table th,
-  [data-artifact-block-id="category_table_block"] .data-table td,
-  [data-artifact-block-id="category_table_block"] .portable-table-scroll th,
-  [data-artifact-block-id="category_table_block"] .portable-table-scroll td {font-size:18px !important;line-height:28px !important;}
+  [data-artifact-block-id="category_table_block"] .portable-visual-header h2,#data-analytics-portable-reader [data-artifact-block-id="category_table_block"] .portable-visual-header h2 {font-size:16px !important;line-height:24px !important;}
+  [data-artifact-block-id="category_table_block"] .data-table th,[data-artifact-block-id="category_table_block"] .data-table td,[data-artifact-block-id="category_table_block"] .portable-table-scroll th,[data-artifact-block-id="category_table_block"] .portable-table-scroll td {font-size:18px !important;line-height:28px !important;}
   [data-artifact-block-id="category_table_block"] col:nth-child(1) {width:24% !important;}
   [data-artifact-block-id="category_table_block"] col:nth-child(2) {width:16% !important;}
   [data-artifact-block-id="category_table_block"] col:nth-child(3) {width:18% !important;}
   [data-artifact-block-id="category_table_block"] col:nth-child(4) {width:42% !important;}
 }
 @media screen and (max-width:760px) {
-  .portable-table-scroll th,.portable-table-scroll td,
-  #data-analytics-portable-reader .data-table th,
-  #data-analytics-portable-reader .data-table td {padding:7px 3px !important;font-size:10px !important;line-height:14px !important;}
-  [data-artifact-block-id="category_table_block"] .portable-visual-header h2,
-  #data-analytics-portable-reader [data-artifact-block-id="category_table_block"] .portable-visual-header h2 {font-size:16px !important;line-height:23px !important;}
-  [data-artifact-block-id="category_table_block"] .data-table th,
-  [data-artifact-block-id="category_table_block"] .data-table td,
-  [data-artifact-block-id="category_table_block"] .portable-table-scroll th,
-  [data-artifact-block-id="category_table_block"] .portable-table-scroll td {font-size:15px !important;line-height:22px !important;}
+  .portable-table-scroll th,.portable-table-scroll td,#data-analytics-portable-reader .data-table th,#data-analytics-portable-reader .data-table td {padding:7px 3px !important;font-size:10px !important;line-height:14px !important;}
+  [data-artifact-block-id="category_table_block"] .portable-visual-header h2,#data-analytics-portable-reader [data-artifact-block-id="category_table_block"] .portable-visual-header h2 {font-size:16px !important;line-height:23px !important;}
+  [data-artifact-block-id="category_table_block"] .data-table th,[data-artifact-block-id="category_table_block"] .data-table td,[data-artifact-block-id="category_table_block"] .portable-table-scroll th,[data-artifact-block-id="category_table_block"] .portable-table-scroll td {font-size:15px !important;line-height:22px !important;}
 }
 </style>
 </head>
@@ -76,11 +61,11 @@ html:not([data-portable-source-tooltips-ready]) .portable-chart-summary>.portabl
 <blockquote><strong>Source note:</strong> This recap is based on the <em>BC PNP Statistical Report and Year in Review 2025</em>, released by BC PNP on August 26, 2026.</blockquote>
 <h2>Executive Summary and Key Observations</h2>
 <ul><li><strong>The defining issue in 2025 was limited allocation and legacy inventory.</strong> B.C. entered the year with about 5,200 applications already waiting and used all 6,214 final nomination spaces.</li><li><strong>Space for new invitations was extremely limited.</strong> Only 978 Skills Immigration ITAs were issued, all through High Economic Impact (HEI) invitations.</li><li><strong>Formal application outcomes remained strong.</strong> The Skills Immigration application approval rate was 94.5%.</li><li><strong>Program capacity was concentrated.</strong> Public-authority clinical healthcare expanded, and HEI was the only category issuing new Skills Immigration ITAs.</li><li><strong>Regional employment remained a clear priority.</strong> 38% of approved Skills Immigration nominees were located outside Metro Vancouver.</li></ul></section></div>
-<div class="portable-block portable-layout-full" data-artifact-block-id="metrics_2025" data-artifact-block-type="metric-strip" data-layout="full"><section class="portable-metric-grid"><article class="portable-metric-card" data-artifact-id="metric:metrics_2025:alloc25" data-artifact-kind="card" data-card-id="alloc25"><p class="portable-metric-label">2025 final BC PNP allocation</p><p class="portable-metric-value"><span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-1"><span class="portable-source-value-text">6,214</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-1" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 6,214</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span></span></span></p><div class="portable-inline-source portable-source-summary" data-source-id="report2025"><div class="portable-inline-source-content portable-source-summary-content"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 2025 final BC PNP allocation</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span><p class="portable-source-description-data">Select the verified final 2025 allocation from the reviewed summary dataset.</p><pre class="portable-source-query-data" aria-hidden="true"><code>SELECT allocation_2025 FROM summary</code></pre></div></div></article><article class="portable-metric-card" data-artifact-id="metric:metrics_2025:si25" data-artifact-kind="card" data-card-id="si25"><p class="portable-metric-label">2025 Skills Immigration nominations issued</p><p class="portable-metric-value"><span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-2"><span class="portable-source-value-text">6,195</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-2" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 6,195</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span></span></span></p><div class="portable-inline-source portable-source-summary" data-source-id="report2025"><div class="portable-inline-source-content portable-source-summary-content"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 2025 Skills Immigration nominations issued</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span><p class="portable-source-description-data">Select 2025 Skills Immigration nominations.</p><pre class="portable-source-query-data" aria-hidden="true"><code>SELECT si_nominations_2025 FROM summary</code></pre></div></div></article><article class="portable-metric-card" data-artifact-id="metric:metrics_2025:approval25" data-artifact-kind="card" data-card-id="approval25"><p class="portable-metric-label">2025 Skills Immigration approval rate (%)</p><p class="portable-metric-value"><span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-3"><span class="portable-source-value-text">94.5</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-3" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 94.5</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span></span></span></p><div class="portable-metric-badges"><span class="portable-metric-badge"><span>Approved</span> <strong><span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-4"><span class="portable-source-value-text">6,195</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-4" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 6,195</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span></span></span></strong></span><span class="portable-metric-badge"><span>Decisions</span> <strong><span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-5"><span class="portable-source-value-text">6,553</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-5" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 6,553</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span></span></span></strong></span></div><div class="portable-inline-source portable-source-summary" data-source-id="report2025"><div class="portable-inline-source-content portable-source-summary-content"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 2025 Skills Immigration approval rate (%)</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span><p class="portable-source-description-data">Select the 2025 Skills Immigration application approval rate, approved nominations and total decisions.</p><pre class="portable-source-query-data" aria-hidden="true"><code>SELECT si_approval_rate_2025, si_nominations_2025, si_decisions_2025 FROM summary</code></pre></div></div></article><article class="portable-metric-card" data-artifact-id="metric:metrics_2025:conversion25" data-artifact-kind="card" data-card-id="conversion25"><p class="portable-metric-label">2025 Skills Immigration ITAs</p><p class="portable-metric-value"><span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-6"><span class="portable-source-value-text">978</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-6" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 978</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span></span></span></p><div class="portable-metric-badges"><span class="portable-metric-badge"><span>Applications</span> <strong><span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-7"><span class="portable-source-value-text">748</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-7" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 748</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span></span></span></strong></span><span class="portable-metric-badge"><span>Conversion rate (%)</span> <strong><span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-8"><span class="portable-source-value-text">76.5</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-8" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 76.5</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span></span></span></strong></span></div><div class="portable-inline-source portable-source-summary" data-source-id="report2025"><div class="portable-inline-source-content portable-source-summary-content"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 2025 Skills Immigration ITAs</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span><p class="portable-source-description-data">Select 2025 issued ITAs, converted applications and conversion rate.</p><pre class="portable-source-query-data" aria-hidden="true"><code>SELECT ita_2025_full_year, ita_converted_2025, ita_conversion_rate_2025 FROM summary</code></pre></div></div></article><article class="portable-metric-card" data-artifact-id="metric:metrics_2025:wage25" data-artifact-kind="card" data-card-id="wage25"><p class="portable-metric-label">2025 nominee median hourly wage</p><p class="portable-metric-value"><span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-9"><span class="portable-source-value-text">$41.42</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-9" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for $41.42</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span></span></span></p><div class="portable-inline-source portable-source-summary" data-source-id="report2025"><div class="portable-inline-source-content portable-source-summary-content"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 2025 nominee median hourly wage</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span><p class="portable-source-description-data">Select the 2025 nominee median hourly wage.</p><pre class="portable-source-query-data" aria-hidden="true"><code>SELECT median_hourly_wage_2025 FROM summary</code></pre></div></div></article><article class="portable-metric-card" data-artifact-id="metric:metrics_2025:region25" data-artifact-kind="card" data-card-id="region25"><p class="portable-metric-label">Nominees outside Metro Vancouver (%)</p><p class="portable-metric-value"><span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-10"><span class="portable-source-value-text">38</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-10" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 38</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span></span></span></p><div class="portable-inline-source portable-source-summary" data-source-id="report2025"><div class="portable-inline-source-content portable-source-summary-content"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for Nominees outside Metro Vancouver (%)</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span><p class="portable-source-description-data">Select the 2025 outside-Metro-Vancouver nominee share.</p><pre class="portable-source-query-data" aria-hidden="true"><code>SELECT outside_metro_share_2025 FROM summary</code></pre></div></div></article></section></div>
+<div class="portable-block portable-layout-full" data-artifact-block-id="metrics_2025" data-artifact-block-type="metric-strip" data-layout="full"><section class="portable-metric-grid"><article class="portable-metric-card" data-artifact-id="metric:metrics_2025:alloc25" data-artifact-kind="card" data-card-id="alloc25"><p class="portable-metric-label">2025 final BC PNP allocation</p><p class="portable-metric-value"><span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-1"><span class="portable-source-value-text">6,214</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-1" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 6,214</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span></span></span></p><div class="portable-inline-source portable-source-summary" data-source-id="report2025"><div class="portable-inline-source-content portable-source-summary-content"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 2025 final BC PNP allocation</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span><p class="portable-source-description-data">Select the verified final 2025 allocation from the reviewed summary dataset.</p><pre class="portable-source-query-data" aria-hidden="true"><code>SELECT allocation_2025 FROM summary</code></pre></div></div></article><article class="portable-metric-card" data-artifact-id="metric:metrics_2025:si25" data-artifact-kind="card" data-card-id="si25"><p class="portable-metric-label">2025 Skills Immigration nominations issued</p><p class="portable-metric-value"><span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-2"><span class="portable-source-value-text">6,195</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-2" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 6,195</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span></span></span></p><div class="portable-inline-source portable-source-summary" data-source-id="report2025"><div class="portable-inline-source-content portable-source-summary-content"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 2025 Skills Immigration nominations issued</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span><p class="portable-source-description-data">Select 2025 Skills Immigration nominations.</p><pre class="portable-source-query-data" aria-hidden="true"><code>SELECT si_nominations_2025 FROM summary</code></pre></div></div></article><article class="portable-metric-card" data-artifact-id="metric:metrics_2025:approval25" data-artifact-kind="card" data-card-id="approval25"><p class="portable-metric-label">2025 Skills Immigration approval rate (%)</p><p class="portable-metric-value"><span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-3"><span class="portable-source-value-text">94.5</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-3" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 94.5</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span></span></span></p><div class="portable-metric-badges"><span class="portable-metric-badge"><span>Approved</span> <strong><span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-4"><span class="portable-source-value-text">6,195</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-4" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 6,195</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span></span></span></strong></span><span class="portable-metric-badge"><span>Decisions</span> <strong><span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-5"><span class="portable-source-value-text">6,553</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-5" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 6,553</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span></span></span></strong></span></div><div class="portable-inline-source portable-source-summary" data-source-id="report2025"><div class="portable-inline-source-content portable-source-summary-content"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 2025 Skills Immigration approval rate (%)</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span><p class="portable-source-description-data">Select the 2025 Skills Immigration application approval rate, approved nominations and total decisions.</p><pre class="portable-source-query-data" aria-hidden="true"><code>SELECT si_approval_rate_2025, si_nominations_2025, si_decisions_2025 FROM summary</code></pre></div></div></article><article class="portable-metric-card" data-artifact-id="metric:metrics_2025:conversion25" data-artifact-kind="card" data-card-id="conversion25"><p class="portable-metric-label">2025 Skills Immigration ITAs</p><p class="portable-metric-value"><span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-6"><span class="portable-source-value-text">978</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-6" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 978</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span></span></span></p><div class="portable-metric-badges"><span class="portable-metric-badge"><span>Applications</span> <strong><span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-7"><span class="portable-source-value-text">748</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-7" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 748</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span></span></span></strong></span><span class="portable-metric-badge"><span>Conversion rate (%)</span> <strong><span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-8"><span class="portable-source-value-text">76.5</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-8" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 76.5</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span></span></span></strong></span></div><div class="portable-inline-source portable-source-summary" data-source-id="report2025"><div class="portable-inline-source-content portable-source-summary-content"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 2025 Skills Immigration ITAs</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span><p class="portable-source-description-data">Select 2025 issued ITAs, converted applications and conversion rate.</p><pre class="portable-source-query-data" aria-hidden="true"><code>SELECT ita_2025_full_year, ita_converted_2025, ita_conversion_rate_2025 FROM summary</code></pre></div></div></article><article class="portable-metric-card" data-artifact-id="metric:metrics_2025:wage25" data-artifact-kind="card" data-card-id="wage25"><p class="portable-metric-label">2025 nominee median hourly wage (CAD)</p><p class="portable-metric-value"><span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-9"><span class="portable-source-value-text">41.42</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-9" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 41.42</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span></span></span></p><div class="portable-inline-source portable-source-summary" data-source-id="report2025"><div class="portable-inline-source-content portable-source-summary-content"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 2025 nominee median hourly wage (CAD)</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span><p class="portable-source-description-data">Select the 2025 nominee median hourly wage.</p><pre class="portable-source-query-data" aria-hidden="true"><code>SELECT median_hourly_wage_2025 FROM summary</code></pre></div></div></article><article class="portable-metric-card" data-artifact-id="metric:metrics_2025:region25" data-artifact-kind="card" data-card-id="region25"><p class="portable-metric-label">Nominees outside Metro Vancouver (%)</p><p class="portable-metric-value"><span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-10"><span class="portable-source-value-text">38</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-10" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 38</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span></span></span></p><div class="portable-inline-source portable-source-summary" data-source-id="report2025"><div class="portable-inline-source-content portable-source-summary-content"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for Nominees outside Metro Vancouver (%)</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span><p class="portable-source-description-data">Select the 2025 outside-Metro-Vancouver nominee share.</p><pre class="portable-source-query-data" aria-hidden="true"><code>SELECT outside_metro_share_2025 FROM summary</code></pre></div></div></article></section></div>
 <div class="portable-block portable-layout-full" data-artifact-block-id="allocation_chart" data-artifact-block-type="chart" data-layout="full"><figure class="portable-content-card portable-chart-summary" data-artifact-id="allocation" data-artifact-kind="chart" data-chart-id="allocation" data-portable-visual-title="Annual BC PNP allocation" data-portable-source-host="true" tabindex="0" aria-label="Annual BC PNP allocation" aria-describedby="portable-source-tooltip-11"><figcaption class="portable-visual-header"><strong>Annual BC PNP allocation</strong></figcaption><div class="portable-inline-source" data-source-id="news2026"><div class="portable-inline-source-content portable-source-tooltip-content" id="portable-source-tooltip-11" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for Annual BC PNP allocation</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: allocation</span><p class="portable-source-description-data">Select the reviewed rows used for the Annual BC PNP allocation chart.</p><pre class="portable-source-query-data" aria-hidden="true"><code>SELECT * FROM allocation</code></pre></div></div><div class="portable-table-scroll"><table><caption>Annual BC PNP allocation data</caption><thead><tr><th scope="col">Year</th><th scope="col" class="portable-table-number">Nominations</th></tr></thead><tbody><tr><td>2024 final</td><td class="portable-table-number">8,000</td></tr><tr><td>2025 final</td><td class="portable-table-number">6,214</td></tr><tr><td>2026 current</td><td class="portable-table-number">6,254</td></tr></tbody></table></div></figure></div>
 <div class="portable-block portable-layout-full" data-artifact-block-id="mix_chart" data-artifact-block-type="chart" data-layout="full"><figure class="portable-content-card portable-chart-summary" data-artifact-id="nomination_mix" data-artifact-kind="chart" data-chart-id="nomination_mix" data-portable-visual-title="2025 approved Skills Immigration nominations by stream" data-portable-source-host="true" tabindex="0" aria-label="2025 approved Skills Immigration nominations by stream" aria-describedby="portable-source-tooltip-12"><figcaption class="portable-visual-header"><strong>2025 approved Skills Immigration nominations by stream</strong></figcaption><div class="portable-inline-source" data-source-id="report2025"><div class="portable-inline-source-content portable-source-tooltip-content" id="portable-source-tooltip-12" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 2025 approved Skills Immigration nominations by stream</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: nomination_mix</span><p class="portable-source-description-data">Select the reviewed rows used for the 2025 approved Skills Immigration nominations by stream chart.</p><pre class="portable-source-query-data" aria-hidden="true"><code>SELECT * FROM nomination_mix</code></pre></div></div><div class="portable-table-scroll"><table><caption>2025 approved Skills Immigration nominations by stream data</caption><thead><tr><th scope="col">Stream</th><th scope="col" class="portable-table-number">Nominations</th></tr></thead><tbody><tr><td>International Post-Graduate</td><td class="portable-table-number">2,548</td></tr><tr><td>Health Authority</td><td class="portable-table-number">1,678</td></tr><tr><td>Skilled Worker</td><td class="portable-table-number">1,390</td></tr><tr><td>International Graduate</td><td class="portable-table-number">542</td></tr><tr><td>Entry Level &amp; Semi-Skilled</td><td class="portable-table-number">37</td></tr></tbody></table></div></figure></div>
 <div class="portable-block portable-layout-full" data-artifact-block-id="priority_heading" data-artifact-block-type="markdown" data-layout="full"><section class="portable-markdown"><h2>Allocation Use and Nomination Composition</h2>
-<ul><li>B.C. used all 6,214 final nomination spaces in 2025, 22.3% fewer than in 2024.</li><li>Skills Immigration accounted for 6,195 nominations, or 99.7%, while Entrepreneur Immigration accounted for 19, or 0.3%.</li><li>B.C. made 6,553 Skills Immigration application decisions and approved 6,195 nominations, producing a 94.5% formal application approval rate.</li><li>The closed International Post-Graduate (IPG) stream produced 2,548 approved nominations, equal to 41.1% of all approved Skills Immigration nominations.</li><li>The 2025 Skills Immigration results also included 37 Entry Level and Semi-Skilled nominations.</li><li>The median hourly wage among approved Skills Immigration nominees was $41.42, while the Skilled Worker median annual salary was $105,000.</li><li>38% of approved Skills Immigration nominees were located outside Metro Vancouver, above the 35% program target.</li><li>The Anti-Fraud and Investigations Unit completed more than 2,000 reviews or investigations.</li><li>Entrepreneur Immigration applications increased from 42 to 65, up 54.8%, while approved nominations declined from 28 to 19, down 32.1%.</li></ul></section></div>
+<ul><li>B.C. used all 6,214 final nomination spaces in 2025, 22.3% fewer than in 2024.</li><li>Skills Immigration accounted for 6,195 nominations, or 99.7%, while Entrepreneur Immigration accounted for 19, or 0.3%.</li><li>B.C. made 6,553 Skills Immigration application decisions and approved 6,195 nominations, producing a 94.5% formal application approval rate.</li><li>The closed International Post-Graduate (IPG) stream produced 2,548 approved nominations, equal to 41.1% of all approved Skills Immigration nominations.</li><li>The 2025 Skills Immigration results also included 37 Entry Level and Semi-Skilled nominations.</li><li>The median hourly wage among approved Skills Immigration nominees was CAD $41.42, while the Skilled Worker median annual salary was CAD $105,000.</li><li>38% of approved Skills Immigration nominees were located outside Metro Vancouver, above the 35% program target.</li><li>The Anti-Fraud and Investigations Unit completed more than 2,000 reviews or investigations.</li><li>Entrepreneur Immigration applications increased from 42 to 65, up 54.8%, while approved nominations declined from 28 to 19, down 32.1%.</li></ul></section></div>
 <div class="portable-block portable-layout-full" data-artifact-block-id="priority_chart" data-artifact-block-type="chart" data-layout="full"><figure class="portable-content-card portable-chart-summary" data-artifact-id="priority_change" data-artifact-kind="chart" data-chart-id="priority_change" data-portable-visual-title="Selected 2025 nomination outcomes versus 2024" data-portable-source-host="true" tabindex="0" aria-label="Selected 2025 nomination outcomes versus 2024" aria-describedby="portable-source-tooltip-13"><figcaption class="portable-visual-header"><strong>Selected 2025 nomination outcomes versus 2024</strong></figcaption><div class="portable-inline-source" data-source-id="report2025"><div class="portable-inline-source-content portable-source-tooltip-content" id="portable-source-tooltip-13" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for Selected 2025 nomination outcomes versus 2024</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: priority_outcomes</span><p class="portable-source-description-data">Select the reviewed rows used for the Selected 2025 nomination outcomes versus 2024 chart.</p><pre class="portable-source-query-data" aria-hidden="true"><code>SELECT * FROM priority_outcomes</code></pre></div></div><div class="portable-table-scroll"><table><caption>Selected 2025 nomination outcomes versus 2024 data</caption><thead><tr><th scope="col">Measure</th><th scope="col" class="portable-table-number">Change</th></tr></thead><tbody><tr><td>Public clinical health</td><td class="portable-table-number">84.1%</td></tr><tr><td>Skills Immigration total</td><td class="portable-table-number">-22.3%</td></tr><tr><td>Construction</td><td class="portable-table-number">-46.4%</td></tr><tr><td>Veterinary</td><td class="portable-table-number">-47.9%</td></tr><tr><td>Technology</td><td class="portable-table-number">-53.4%</td></tr><tr><td>Childcare</td><td class="portable-table-number">-68%</td></tr></tbody></table></div></figure></div>
 <div class="portable-block portable-layout-full" data-artifact-block-id="section1_summary" data-artifact-block-type="markdown" data-layout="full"><section class="portable-markdown"><h2>Priority Category Changes</h2>
 <ul><li><strong>Public-authority clinical healthcare expanded sharply.</strong> Approved nominations increased from 641 to <span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-14"><span class="portable-source-value-text">1,180</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-14" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 1,180</span><strong>Source: BC PNP Statistical Report and Year in Review 2025</strong></span></span>, up <span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-15"><span class="portable-source-value-text">84.1%</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-15" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 84.1%</span><strong>Source: BC PNP Statistical Report and Year in Review 2025</strong></span></span>. Employer setting became a material distinction within healthcare.</li><li><strong>Priority Technology contracted sharply.</strong> Approved nominations fell from 1,302 to <span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-16"><span class="portable-source-value-text">607</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-16" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 607</span><strong>Source: BC PNP Statistical Report and Year in Review 2025</strong></span></span>, down <span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-17"><span class="portable-source-value-text">53.4%</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-17" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 53.4%</span><strong>Source: BC PNP Statistical Report and Year in Review 2025</strong></span></span>. In 2026, the principal opportunity for technology applicants is concentrated in HEI.</li><li><strong>Childcare, Construction and Veterinary approved nominations all declined substantially.</strong> Limited 2025 capacity was concentrated in legacy inventory and public-authority clinical healthcare.</li><li><strong>HEI was the only category issuing new Skills Immigration ITAs in 2025.</strong> The program issued <span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-18"><span class="portable-source-value-text">978</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-18" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 978</span><strong>Source: BC PNP Statistical Report and Year in Review 2025</strong></span></span> ITAs, of which 748 became formal applications.</li></ul></section><div class="portable-inline-source portable-source-summary" data-source-id="report2025"><div class="portable-inline-source-content portable-source-summary-content"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for Priority Category Changes</span><strong>Source: BC PNP Statistical Report and Year in Review 2025</strong></div></div></div>
@@ -98,9 +83,9 @@ html:not([data-portable-source-tooltips-ready]) .portable-chart-summary>.portabl
 <p>Childcare fell from 115 to 102, Health from 108 to 84, Construction from 108 to 88 and Veterinary from 100 to 72. Childcare, Health and Construction combined lower cutoffs with stable or increasing invitation volume. Veterinary issued no more than 25 ITAs across the period, so the practical opportunity remains limited.</p></section></div>
 <div class="portable-block portable-layout-full" data-artifact-block-id="sector_chart" data-artifact-block-type="chart" data-layout="full"><figure class="portable-content-card portable-chart-summary" data-artifact-id="sector_scores" data-artifact-kind="chart" data-chart-id="sector_scores" data-portable-visual-title="CARE and BUILD minimum scores" data-portable-source-host="true" tabindex="0" aria-label="CARE and BUILD minimum scores" aria-describedby="portable-source-tooltip-28"><figcaption class="portable-visual-header"><strong>CARE and BUILD minimum scores</strong></figcaption><div class="portable-inline-source" data-source-id="ita2026"><div class="portable-inline-source-content portable-source-tooltip-content" id="portable-source-tooltip-28" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for CARE and BUILD minimum scores</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: sector_scores</span><p class="portable-source-description-data">Select the reviewed rows used for the CARE and BUILD minimum scores chart.</p><pre class="portable-source-query-data" aria-hidden="true"><code>SELECT * FROM sector_scores</code></pre></div></div><div class="portable-table-scroll"><table><caption>CARE and BUILD minimum scores data</caption><thead><tr><th scope="col">Draw date</th><th scope="col" class="portable-table-number">Minimum score</th><th scope="col">Category</th></tr></thead><tbody><tr><td>2026-05-06</td><td class="portable-table-number">115</td><td>Childcare</td></tr><tr><td>2026-05-06</td><td class="portable-table-number">108</td><td>Health</td></tr><tr><td>2026-05-06</td><td class="portable-table-number">108</td><td>Construction</td></tr><tr><td>2026-05-06</td><td class="portable-table-number">100</td><td>Veterinary</td></tr><tr><td>2026-06-02</td><td class="portable-table-number">111</td><td>Childcare</td></tr><tr><td>2026-06-02</td><td class="portable-table-number">100</td><td>Health</td></tr><tr><td>2026-06-02</td><td class="portable-table-number">101</td><td>Construction</td></tr><tr><td>2026-06-02</td><td class="portable-table-number">92</td><td>Veterinary</td></tr><tr><td>2026-07-09</td><td class="portable-table-number">108</td><td>Childcare</td></tr><tr><td>2026-07-09</td><td class="portable-table-number">96</td><td>Health</td></tr><tr><td>2026-07-09</td><td class="portable-table-number">97</td><td>Construction</td></tr><tr><td>2026-07-09</td><td class="portable-table-number">88</td><td>Veterinary</td></tr><tr><td>2026-08-06</td><td class="portable-table-number">102</td><td>Childcare</td></tr><tr><td>2026-08-06</td><td class="portable-table-number">84</td><td>Health</td></tr><tr><td>2026-08-06</td><td class="portable-table-number">88</td><td>Construction</td></tr><tr><td>2026-08-06</td><td class="portable-table-number">72</td><td>Veterinary</td></tr></tbody></table></div></figure></div>
 <div class="portable-block portable-layout-full" data-artifact-block-id="hei_heading" data-artifact-block-type="markdown" data-layout="full"><section class="portable-markdown"><h2>High Economic Impact (HEI) Invitation Trends</h2>
-<ul><li><strong>The points route remains at a high level.</strong> In 2026, HEI points thresholds have stayed within 132–138. The current threshold is below the start of the year, but the route has not shown a rapid decline.</li><li><strong>The wage route continues to ease.</strong> The hourly threshold fell from $105 in May 2025 to $55 in August 2026. My assessment is that the pool is shrinking and new high-wage candidates are not replenishing it as quickly as invitations are removing candidates. Applicants who meet the hourly and annual salary thresholds should promptly verify their registration, NOC and compensation evidence.</li><li>In 2026, the wage route covers NOC TEER 0–3 and also applies an annual salary threshold.</li></ul></section></div>
+<ul><li><strong>The points route remains at a high level.</strong> In 2026, HEI points thresholds have stayed within 132–138. The current threshold is below the start of the year, but the route has not shown a rapid decline.</li><li><strong>The wage route continues to ease.</strong> The hourly threshold fell from CAD $105 in May 2025 to CAD $55 in August 2026. My assessment is that the pool is shrinking and new high-wage candidates are not replenishing it as quickly as invitations are removing candidates. Applicants who meet the hourly and annual salary thresholds should promptly verify their registration, NOC and compensation evidence.</li><li>In 2026, the wage route covers NOC TEER 0–3 and also applies an annual salary threshold.</li></ul></section></div>
 <div class="portable-block portable-layout-half" data-artifact-block-id="hei_points_chart" data-artifact-block-type="chart" data-layout="half"><figure class="portable-content-card portable-chart-summary" data-artifact-id="hei_points" data-artifact-kind="chart" data-chart-id="hei_points" data-portable-visual-title="HEI points threshold" data-portable-source-host="true" tabindex="0" aria-label="HEI points threshold" aria-describedby="portable-source-tooltip-29"><figcaption class="portable-visual-header"><strong>HEI points threshold</strong></figcaption><div class="portable-inline-source" data-source-id="ita2026"><div class="portable-inline-source-content portable-source-tooltip-content" id="portable-source-tooltip-29" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for HEI points threshold</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: hei_points</span><p class="portable-source-description-data">Select the reviewed rows used for the HEI points threshold chart.</p><pre class="portable-source-query-data" aria-hidden="true"><code>SELECT * FROM hei_points</code></pre></div></div><div class="portable-table-scroll"><table><caption>HEI points threshold data</caption><thead><tr><th scope="col">Draw date</th><th scope="col" class="portable-table-number">Minimum score</th></tr></thead><tbody><tr><td>2025-05-08</td><td class="portable-table-number">150</td></tr><tr><td>2025-10-02</td><td class="portable-table-number">140</td></tr><tr><td>2025-12-10</td><td class="portable-table-number">138</td></tr><tr><td>2026-02-04</td><td class="portable-table-number">138</td></tr><tr><td>2026-02-11</td><td class="portable-table-number">135</td></tr><tr><td>2026-04-22</td><td class="portable-table-number">138</td></tr><tr><td>2026-05-14</td><td class="portable-table-number">135</td></tr><tr><td>2026-06-18</td><td class="portable-table-number">136</td></tr><tr><td>2026-07-16</td><td class="portable-table-number">132</td></tr><tr><td>2026-08-20</td><td class="portable-table-number">132</td></tr></tbody></table></div></figure></div>
-<div class="portable-block portable-layout-half" data-artifact-block-id="hei_wage_chart" data-artifact-block-type="chart" data-layout="half"><figure class="portable-content-card portable-chart-summary" data-artifact-id="hei_wage" data-artifact-kind="chart" data-chart-id="hei_wage" data-portable-visual-title="HEI hourly-wage threshold" data-portable-source-host="true" tabindex="0" aria-label="HEI hourly-wage threshold" aria-describedby="portable-source-tooltip-30"><figcaption class="portable-visual-header"><strong>HEI hourly-wage threshold</strong></figcaption><div class="portable-inline-source" data-source-id="ita2026"><div class="portable-inline-source-content portable-source-tooltip-content" id="portable-source-tooltip-30" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for HEI hourly-wage threshold</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: hei_wage</span><p class="portable-source-description-data">Select the reviewed rows used for the HEI hourly-wage threshold chart.</p><pre class="portable-source-query-data" aria-hidden="true"><code>SELECT * FROM hei_wage</code></pre></div></div><div class="portable-table-scroll"><table><caption>HEI hourly-wage threshold data</caption><thead><tr><th scope="col">Draw date</th><th scope="col" class="portable-table-number">Hourly wage</th></tr></thead><tbody><tr><td>2025-05-08</td><td class="portable-table-number">$105</td></tr><tr><td>2025-10-02</td><td class="portable-table-number">$90</td></tr><tr><td>2025-12-10</td><td class="portable-table-number">$84</td></tr><tr><td>2026-02-04</td><td class="portable-table-number">$70</td></tr><tr><td>2026-02-11</td><td class="portable-table-number">$62</td></tr><tr><td>2026-04-22</td><td class="portable-table-number">$62</td></tr><tr><td>2026-05-14</td><td class="portable-table-number">$59</td></tr><tr><td>2026-06-18</td><td class="portable-table-number">$62</td></tr><tr><td>2026-07-16</td><td class="portable-table-number">$58</td></tr><tr><td>2026-08-20</td><td class="portable-table-number">$55</td></tr></tbody></table></div></figure></div>
+<div class="portable-block portable-layout-half" data-artifact-block-id="hei_wage_chart" data-artifact-block-type="chart" data-layout="half"><figure class="portable-content-card portable-chart-summary" data-artifact-id="hei_wage" data-artifact-kind="chart" data-chart-id="hei_wage" data-portable-visual-title="HEI hourly-wage threshold (CAD)" data-portable-source-host="true" tabindex="0" aria-label="HEI hourly-wage threshold (CAD)" aria-describedby="portable-source-tooltip-30"><figcaption class="portable-visual-header"><strong>HEI hourly-wage threshold (CAD)</strong></figcaption><div class="portable-inline-source" data-source-id="ita2026"><div class="portable-inline-source-content portable-source-tooltip-content" id="portable-source-tooltip-30" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for HEI hourly-wage threshold (CAD)</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: hei_wage</span><p class="portable-source-description-data">Select the reviewed rows used for the HEI hourly-wage threshold chart.</p><pre class="portable-source-query-data" aria-hidden="true"><code>SELECT * FROM hei_wage</code></pre></div></div><div class="portable-table-scroll"><table><caption>HEI hourly-wage threshold (CAD) data</caption><thead><tr><th scope="col">Draw date</th><th scope="col" class="portable-table-number">Hourly wage (CAD)</th></tr></thead><tbody><tr><td>2025-05-08</td><td class="portable-table-number">105CAD</td></tr><tr><td>2025-10-02</td><td class="portable-table-number">90CAD</td></tr><tr><td>2025-12-10</td><td class="portable-table-number">84CAD</td></tr><tr><td>2026-02-04</td><td class="portable-table-number">70CAD</td></tr><tr><td>2026-02-11</td><td class="portable-table-number">62CAD</td></tr><tr><td>2026-04-22</td><td class="portable-table-number">62CAD</td></tr><tr><td>2026-05-14</td><td class="portable-table-number">59CAD</td></tr><tr><td>2026-06-18</td><td class="portable-table-number">62CAD</td></tr><tr><td>2026-07-16</td><td class="portable-table-number">58CAD</td></tr><tr><td>2026-08-20</td><td class="portable-table-number">55CAD</td></tr></tbody></table></div></figure></div>
 <div class="portable-block portable-layout-full" data-artifact-block-id="pool_heading" data-artifact-block-type="markdown" data-layout="full"><section class="portable-markdown"><h2>2026 Registration Pool Movement</h2>
 <p>The total registered pool fell from 9,902 on June 2 to 8,306 on August 4, a decrease of 16.1%. The pool contracted while substantial ITA volume was issued, reducing overall competitive pressure.</p></section></div>
 <div class="portable-block portable-layout-full" data-artifact-block-id="pool_chart" data-artifact-block-type="chart" data-layout="full"><figure class="portable-content-card portable-chart-summary" data-artifact-id="pool_snapshots" data-artifact-kind="chart" data-chart-id="pool_snapshots" data-portable-visual-title="Skills Immigration pool snapshots" data-portable-source-host="true" tabindex="0" aria-label="Skills Immigration pool snapshots" aria-describedby="portable-source-tooltip-31"><figcaption class="portable-visual-header"><strong>Skills Immigration pool snapshots</strong></figcaption><div class="portable-inline-source" data-source-id="ita2026"><div class="portable-inline-source-content portable-source-tooltip-content" id="portable-source-tooltip-31" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for Skills Immigration pool snapshots</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: pool_snapshots</span><p class="portable-source-description-data">Select the reviewed rows used for the Skills Immigration pool snapshots chart.</p><pre class="portable-source-query-data" aria-hidden="true"><code>SELECT * FROM pool_snapshots</code></pre></div></div><div class="portable-table-scroll"><table><caption>Skills Immigration pool snapshots data</caption><thead><tr><th scope="col">Snapshot date</th><th scope="col" class="portable-table-number">Registrations</th></tr></thead><tbody><tr><td>2026-06-02</td><td class="portable-table-number">9,902</td></tr><tr><td>2026-07-07</td><td class="portable-table-number">8,683</td></tr><tr><td>2026-08-04</td><td class="portable-table-number">8,306</td></tr></tbody></table></div></figure></div>
@@ -451,171 +436,171 @@ html:not([data-portable-source-tooltips-ready]) .portable-chart-summary>.portabl
 })();</script>
 <div id="data-analytics-portable-reader" aria-hidden="true" inert></div>
 <template id="data-analytics-portable-artifact-payload-source" data-compression="gzip-base64">
-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
-T+gmhTCu/imLv7csfvp/6JJfVO+hAAA=
+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
 </template>
 <template id="data-analytics-portable-reader-runtime-source" data-compression="gzip-base64">
 H4sIAAAAAAACE+y9aXfbxrYg+v3+CiqdpwauSgwpeQQN8zoaYieeYtlJHEUtQGRRhA0CDABKViSe

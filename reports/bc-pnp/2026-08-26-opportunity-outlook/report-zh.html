@@ -34,39 +34,24 @@ html:not([data-portable-source-tooltips-ready]) .portable-chart-summary>.portabl
 </style>
 <style id="zing-table-fit">
 @media screen {
-  .portable-page-meta,#data-analytics-portable-reader .portable-page-meta,#data-analytics-portable-reader .analytics-top-bar-freshness {display:none !important;}
-  .portable-table-source-region,.portable-table-scroll,
-  #data-analytics-portable-reader .table-scroll-shell,
-  #data-analytics-portable-reader .table-wrap,
-  #data-analytics-portable-reader .table-scroll-content {width:100% !important;max-width:100% !important;}
+  .portable-page-meta,#data-analytics-portable-reader .portable-page-meta,#data-analytics-portable-reader .analytics-top-bar-freshness,#data-analytics-portable-reader .top-bar-refresh-button.analytics-reader-freshness {display:none !important;}
+  .portable-table-source-region,.portable-table-scroll,#data-analytics-portable-reader .table-scroll-shell,#data-analytics-portable-reader .table-wrap,#data-analytics-portable-reader .table-scroll-content {width:100% !important;max-width:100% !important;}
   .portable-table-scroll,#data-analytics-portable-reader .table-wrap {overflow:visible !important;}
   .portable-table-scroll table,#data-analytics-portable-reader .data-table {width:100% !important;max-width:100% !important;min-width:0 !important;table-layout:fixed !important;}
-  .portable-table-scroll th,.portable-table-scroll td,
-  #data-analytics-portable-reader .data-table th,
-  #data-analytics-portable-reader .data-table td {padding:8px 6px 8px 0 !important;white-space:normal !important;overflow:visible !important;text-overflow:clip !important;overflow-wrap:anywhere !important;word-break:normal !important;font-size:11px !important;line-height:16px !important;vertical-align:top !important;}
+  .portable-table-scroll th,.portable-table-scroll td,#data-analytics-portable-reader .data-table th,#data-analytics-portable-reader .data-table td {padding:8px 6px 8px 0 !important;white-space:normal !important;overflow:visible !important;text-overflow:clip !important;overflow-wrap:anywhere !important;word-break:normal !important;font-size:11px !important;line-height:16px !important;vertical-align:top !important;}
   #data-analytics-portable-reader .data-table col,#data-analytics-portable-reader .data-table th {width:auto !important;}
   #data-analytics-portable-reader .table-sort-button {width:100% !important;min-width:0 !important;white-space:normal !important;overflow-wrap:anywhere !important;}
-  [data-artifact-block-id="category_table_block"] .portable-visual-header h2,
-  #data-analytics-portable-reader [data-artifact-block-id="category_table_block"] .portable-visual-header h2 {font-size:16px !important;line-height:24px !important;}
-  [data-artifact-block-id="category_table_block"] .data-table th,
-  [data-artifact-block-id="category_table_block"] .data-table td,
-  [data-artifact-block-id="category_table_block"] .portable-table-scroll th,
-  [data-artifact-block-id="category_table_block"] .portable-table-scroll td {font-size:18px !important;line-height:28px !important;}
+  [data-artifact-block-id="category_table_block"] .portable-visual-header h2,#data-analytics-portable-reader [data-artifact-block-id="category_table_block"] .portable-visual-header h2 {font-size:16px !important;line-height:24px !important;}
+  [data-artifact-block-id="category_table_block"] .data-table th,[data-artifact-block-id="category_table_block"] .data-table td,[data-artifact-block-id="category_table_block"] .portable-table-scroll th,[data-artifact-block-id="category_table_block"] .portable-table-scroll td {font-size:18px !important;line-height:28px !important;}
   [data-artifact-block-id="category_table_block"] col:nth-child(1) {width:24% !important;}
   [data-artifact-block-id="category_table_block"] col:nth-child(2) {width:16% !important;}
   [data-artifact-block-id="category_table_block"] col:nth-child(3) {width:18% !important;}
   [data-artifact-block-id="category_table_block"] col:nth-child(4) {width:42% !important;}
 }
 @media screen and (max-width:760px) {
-  .portable-table-scroll th,.portable-table-scroll td,
-  #data-analytics-portable-reader .data-table th,
-  #data-analytics-portable-reader .data-table td {padding:7px 3px !important;font-size:10px !important;line-height:14px !important;}
-  [data-artifact-block-id="category_table_block"] .portable-visual-header h2,
-  #data-analytics-portable-reader [data-artifact-block-id="category_table_block"] .portable-visual-header h2 {font-size:16px !important;line-height:23px !important;}
-  [data-artifact-block-id="category_table_block"] .data-table th,
-  [data-artifact-block-id="category_table_block"] .data-table td,
-  [data-artifact-block-id="category_table_block"] .portable-table-scroll th,
-  [data-artifact-block-id="category_table_block"] .portable-table-scroll td {font-size:15px !important;line-height:22px !important;}
+  .portable-table-scroll th,.portable-table-scroll td,#data-analytics-portable-reader .data-table th,#data-analytics-portable-reader .data-table td {padding:7px 3px !important;font-size:10px !important;line-height:14px !important;}
+  [data-artifact-block-id="category_table_block"] .portable-visual-header h2,#data-analytics-portable-reader [data-artifact-block-id="category_table_block"] .portable-visual-header h2 {font-size:16px !important;line-height:23px !important;}
+  [data-artifact-block-id="category_table_block"] .data-table th,[data-artifact-block-id="category_table_block"] .data-table td,[data-artifact-block-id="category_table_block"] .portable-table-scroll th,[data-artifact-block-id="category_table_block"] .portable-table-scroll td {font-size:15px !important;line-height:22px !important;}
 }
 </style>
 </head>
@@ -76,11 +61,11 @@ html:not([data-portable-source-tooltips-ready]) .portable-chart-summary>.portabl
 <blockquote><strong>资料说明：</strong> 本节回顾根据 BC PNP 于 2026 年 8 月 26 日发布的《BC PNP Statistical Report and Year in Review 2025》整理。</blockquote>
 <h2>核心观点与观察总结</h2>
 <ul><li><strong>2025 年的核心问题是名额紧张和历史库存。</strong> BC PNP 年初已有约 5,200 份申请等待处理，最终 6,214 个名额全部使用。</li><li><strong>新邀请空间非常有限。</strong> 全年只发出 978 个 Skills Immigration ITA，而且全部来自 High Economic Impact（高经济影响，简称 HEI）邀请。</li><li><strong>进入正式申请阶段后的整体获批表现稳定。</strong> 2025 年 Skills Immigration 正式申请批准率为 94.5%。</li><li><strong>政策资源集中在少数方向。</strong> 公共医疗机构临床岗位明显增长，HEI 是全年唯一发出新 Skills Immigration ITA 的类别。</li><li><strong>区域就业继续受到重视。</strong> 38% 的 Skills Immigration 获批提名人位于 Metro Vancouver 以外。</li></ul></section></div>
-<div class="portable-block portable-layout-full" data-artifact-block-id="metrics_2025" data-artifact-block-type="metric-strip" data-layout="full"><section class="portable-metric-grid"><article class="portable-metric-card" data-artifact-id="metric:metrics_2025:alloc25" data-artifact-kind="card" data-card-id="alloc25"><p class="portable-metric-label">2025 年 BC PNP 最终名额</p><p class="portable-metric-value"><span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-1"><span class="portable-source-value-text">6,214</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-1" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 6,214</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span></span></span></p><div class="portable-inline-source portable-source-summary" data-source-id="report2025"><div class="portable-inline-source-content portable-source-summary-content"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 2025 年 BC PNP 最终名额</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span><p class="portable-source-description-data">选择用于该指标的已核对数据。</p><pre class="portable-source-query-data" aria-hidden="true"><code>SELECT allocation_2025 FROM summary</code></pre></div></div></article><article class="portable-metric-card" data-artifact-id="metric:metrics_2025:si25" data-artifact-kind="card" data-card-id="si25"><p class="portable-metric-label">2025 年 Skills Immigration 获批提名</p><p class="portable-metric-value"><span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-2"><span class="portable-source-value-text">6,195</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-2" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 6,195</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span></span></span></p><div class="portable-inline-source portable-source-summary" data-source-id="report2025"><div class="portable-inline-source-content portable-source-summary-content"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 2025 年 Skills Immigration 获批提名</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span><p class="portable-source-description-data">选择用于该指标的已核对数据。</p><pre class="portable-source-query-data" aria-hidden="true"><code>SELECT si_nominations_2025 FROM summary</code></pre></div></div></article><article class="portable-metric-card" data-artifact-id="metric:metrics_2025:approval25" data-artifact-kind="card" data-card-id="approval25"><p class="portable-metric-label">2025 年 Skills Immigration 批准率（%）</p><p class="portable-metric-value"><span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-3"><span class="portable-source-value-text">94.5</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-3" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 94.5</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span></span></span></p><div class="portable-metric-badges"><span class="portable-metric-badge"><span>获批提名</span> <strong><span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-4"><span class="portable-source-value-text">6,195</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-4" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 6,195</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span></span></span></strong></span><span class="portable-metric-badge"><span>申请决定</span> <strong><span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-5"><span class="portable-source-value-text">6,553</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-5" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 6,553</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span></span></span></strong></span></div><div class="portable-inline-source portable-source-summary" data-source-id="report2025"><div class="portable-inline-source-content portable-source-summary-content"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 2025 年 Skills Immigration 批准率（%）</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span><p class="portable-source-description-data">选择用于该指标的已核对数据。</p><pre class="portable-source-query-data" aria-hidden="true"><code>SELECT si_approval_rate_2025, si_nominations_2025, si_decisions_2025 FROM summary</code></pre></div></div></article><article class="portable-metric-card" data-artifact-id="metric:metrics_2025:conversion25" data-artifact-kind="card" data-card-id="conversion25"><p class="portable-metric-label">2025 年 Skills Immigration ITA</p><p class="portable-metric-value"><span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-6"><span class="portable-source-value-text">978</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-6" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 978</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span></span></span></p><div class="portable-metric-badges"><span class="portable-metric-badge"><span>正式申请</span> <strong><span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-7"><span class="portable-source-value-text">748</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-7" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 748</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span></span></span></strong></span><span class="portable-metric-badge"><span>转化率（%）</span> <strong><span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-8"><span class="portable-source-value-text">76.5</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-8" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 76.5</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span></span></span></strong></span></div><div class="portable-inline-source portable-source-summary" data-source-id="report2025"><div class="portable-inline-source-content portable-source-summary-content"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 2025 年 Skills Immigration ITA</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span><p class="portable-source-description-data">选择用于该指标的已核对数据。</p><pre class="portable-source-query-data" aria-hidden="true"><code>SELECT ita_2025_full_year, ita_converted_2025, ita_conversion_rate_2025 FROM summary</code></pre></div></div></article><article class="portable-metric-card" data-artifact-id="metric:metrics_2025:wage25" data-artifact-kind="card" data-card-id="wage25"><p class="portable-metric-label">2025 年技能移民提名人时薪中位数</p><p class="portable-metric-value"><span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-9"><span class="portable-source-value-text">$41.42</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-9" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for $41.42</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span></span></span></p><div class="portable-inline-source portable-source-summary" data-source-id="report2025"><div class="portable-inline-source-content portable-source-summary-content"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 2025 年技能移民提名人时薪中位数</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span><p class="portable-source-description-data">选择用于该指标的已核对数据。</p><pre class="portable-source-query-data" aria-hidden="true"><code>SELECT median_hourly_wage_2025 FROM summary</code></pre></div></div></article><article class="portable-metric-card" data-artifact-id="metric:metrics_2025:region25" data-artifact-kind="card" data-card-id="region25"><p class="portable-metric-label">技能移民提名人｜大温以外比例（%）</p><p class="portable-metric-value"><span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-10"><span class="portable-source-value-text">38</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-10" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 38</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span></span></span></p><div class="portable-inline-source portable-source-summary" data-source-id="report2025"><div class="portable-inline-source-content portable-source-summary-content"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 技能移民提名人｜大温以外比例（%）</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span><p class="portable-source-description-data">选择用于该指标的已核对数据。</p><pre class="portable-source-query-data" aria-hidden="true"><code>SELECT outside_metro_share_2025 FROM summary</code></pre></div></div></article></section></div>
+<div class="portable-block portable-layout-full" data-artifact-block-id="metrics_2025" data-artifact-block-type="metric-strip" data-layout="full"><section class="portable-metric-grid"><article class="portable-metric-card" data-artifact-id="metric:metrics_2025:alloc25" data-artifact-kind="card" data-card-id="alloc25"><p class="portable-metric-label">2025 年 BC PNP 最终名额</p><p class="portable-metric-value"><span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-1"><span class="portable-source-value-text">6,214</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-1" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 6,214</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span></span></span></p><div class="portable-inline-source portable-source-summary" data-source-id="report2025"><div class="portable-inline-source-content portable-source-summary-content"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 2025 年 BC PNP 最终名额</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span><p class="portable-source-description-data">选择用于该指标的已核对数据。</p><pre class="portable-source-query-data" aria-hidden="true"><code>SELECT allocation_2025 FROM summary</code></pre></div></div></article><article class="portable-metric-card" data-artifact-id="metric:metrics_2025:si25" data-artifact-kind="card" data-card-id="si25"><p class="portable-metric-label">2025 年 Skills Immigration 获批提名</p><p class="portable-metric-value"><span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-2"><span class="portable-source-value-text">6,195</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-2" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 6,195</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span></span></span></p><div class="portable-inline-source portable-source-summary" data-source-id="report2025"><div class="portable-inline-source-content portable-source-summary-content"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 2025 年 Skills Immigration 获批提名</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span><p class="portable-source-description-data">选择用于该指标的已核对数据。</p><pre class="portable-source-query-data" aria-hidden="true"><code>SELECT si_nominations_2025 FROM summary</code></pre></div></div></article><article class="portable-metric-card" data-artifact-id="metric:metrics_2025:approval25" data-artifact-kind="card" data-card-id="approval25"><p class="portable-metric-label">2025 年 Skills Immigration 批准率（%）</p><p class="portable-metric-value"><span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-3"><span class="portable-source-value-text">94.5</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-3" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 94.5</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span></span></span></p><div class="portable-metric-badges"><span class="portable-metric-badge"><span>获批提名</span> <strong><span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-4"><span class="portable-source-value-text">6,195</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-4" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 6,195</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span></span></span></strong></span><span class="portable-metric-badge"><span>申请决定</span> <strong><span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-5"><span class="portable-source-value-text">6,553</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-5" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 6,553</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span></span></span></strong></span></div><div class="portable-inline-source portable-source-summary" data-source-id="report2025"><div class="portable-inline-source-content portable-source-summary-content"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 2025 年 Skills Immigration 批准率（%）</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span><p class="portable-source-description-data">选择用于该指标的已核对数据。</p><pre class="portable-source-query-data" aria-hidden="true"><code>SELECT si_approval_rate_2025, si_nominations_2025, si_decisions_2025 FROM summary</code></pre></div></div></article><article class="portable-metric-card" data-artifact-id="metric:metrics_2025:conversion25" data-artifact-kind="card" data-card-id="conversion25"><p class="portable-metric-label">2025 年 Skills Immigration ITA</p><p class="portable-metric-value"><span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-6"><span class="portable-source-value-text">978</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-6" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 978</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span></span></span></p><div class="portable-metric-badges"><span class="portable-metric-badge"><span>正式申请</span> <strong><span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-7"><span class="portable-source-value-text">748</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-7" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 748</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span></span></span></strong></span><span class="portable-metric-badge"><span>转化率（%）</span> <strong><span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-8"><span class="portable-source-value-text">76.5</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-8" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 76.5</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span></span></span></strong></span></div><div class="portable-inline-source portable-source-summary" data-source-id="report2025"><div class="portable-inline-source-content portable-source-summary-content"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 2025 年 Skills Immigration ITA</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span><p class="portable-source-description-data">选择用于该指标的已核对数据。</p><pre class="portable-source-query-data" aria-hidden="true"><code>SELECT ita_2025_full_year, ita_converted_2025, ita_conversion_rate_2025 FROM summary</code></pre></div></div></article><article class="portable-metric-card" data-artifact-id="metric:metrics_2025:wage25" data-artifact-kind="card" data-card-id="wage25"><p class="portable-metric-label">2025 年技能移民提名人时薪中位数（加元）</p><p class="portable-metric-value"><span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-9"><span class="portable-source-value-text">41.42</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-9" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 41.42</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span></span></span></p><div class="portable-inline-source portable-source-summary" data-source-id="report2025"><div class="portable-inline-source-content portable-source-summary-content"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 2025 年技能移民提名人时薪中位数（加元）</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span><p class="portable-source-description-data">选择用于该指标的已核对数据。</p><pre class="portable-source-query-data" aria-hidden="true"><code>SELECT median_hourly_wage_2025 FROM summary</code></pre></div></div></article><article class="portable-metric-card" data-artifact-id="metric:metrics_2025:region25" data-artifact-kind="card" data-card-id="region25"><p class="portable-metric-label">技能移民提名人｜大温以外比例（%）</p><p class="portable-metric-value"><span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-10"><span class="portable-source-value-text">38</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-10" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 38</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span></span></span></p><div class="portable-inline-source portable-source-summary" data-source-id="report2025"><div class="portable-inline-source-content portable-source-summary-content"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 技能移民提名人｜大温以外比例（%）</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: summary</span><p class="portable-source-description-data">选择用于该指标的已核对数据。</p><pre class="portable-source-query-data" aria-hidden="true"><code>SELECT outside_metro_share_2025 FROM summary</code></pre></div></div></article></section></div>
 <div class="portable-block portable-layout-full" data-artifact-block-id="allocation_chart" data-artifact-block-type="chart" data-layout="full"><figure class="portable-content-card portable-chart-summary" data-artifact-id="allocation" data-artifact-kind="chart" data-chart-id="allocation" data-portable-visual-title="BC PNP 年度提名名额" data-portable-source-host="true" tabindex="0" aria-label="BC PNP 年度提名名额" aria-describedby="portable-source-tooltip-11"><figcaption class="portable-visual-header"><strong>BC PNP 年度提名名额</strong></figcaption><div class="portable-inline-source" data-source-id="news2026"><div class="portable-inline-source-content portable-source-tooltip-content" id="portable-source-tooltip-11" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for BC PNP 年度提名名额</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: allocation</span><p class="portable-source-description-data">选择用于“BC PNP 年度提名名额”图表的已核对数据行。</p><pre class="portable-source-query-data" aria-hidden="true"><code>SELECT * FROM allocation</code></pre></div></div><div class="portable-table-scroll"><table><caption>BC PNP 年度提名名额 data</caption><thead><tr><th scope="col">年份</th><th scope="col" class="portable-table-number">提名名额</th></tr></thead><tbody><tr><td>2024 年最终</td><td class="portable-table-number">8,000</td></tr><tr><td>2025 年最终</td><td class="portable-table-number">6,214</td></tr><tr><td>2026 年当前</td><td class="portable-table-number">6,254</td></tr></tbody></table></div></figure></div>
 <div class="portable-block portable-layout-full" data-artifact-block-id="mix_chart" data-artifact-block-type="chart" data-layout="full"><figure class="portable-content-card portable-chart-summary" data-artifact-id="nomination_mix" data-artifact-kind="chart" data-chart-id="nomination_mix" data-portable-visual-title="2025 年 Skills Immigration 各 Stream 获批提名构成" data-portable-source-host="true" tabindex="0" aria-label="2025 年 Skills Immigration 各 Stream 获批提名构成" aria-describedby="portable-source-tooltip-12"><figcaption class="portable-visual-header"><strong>2025 年 Skills Immigration 各 Stream 获批提名构成</strong></figcaption><div class="portable-inline-source" data-source-id="report2025"><div class="portable-inline-source-content portable-source-tooltip-content" id="portable-source-tooltip-12" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 2025 年 Skills Immigration 各 Stream 获批提名构成</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: nomination_mix</span><p class="portable-source-description-data">选择用于“2025 年 Skills Immigration 各 Stream 获批提名构成”图表的已核对数据行。</p><pre class="portable-source-query-data" aria-hidden="true"><code>SELECT * FROM nomination_mix</code></pre></div></div><div class="portable-table-scroll"><table><caption>2025 年 Skills Immigration 各 Stream 获批提名构成 data</caption><thead><tr><th scope="col">Stream</th><th scope="col" class="portable-table-number">提名人数</th></tr></thead><tbody><tr><td>IPG（国际研究生）</td><td class="portable-table-number">2,548</td></tr><tr><td>Health Authority（医疗机构）</td><td class="portable-table-number">1,678</td></tr><tr><td>Skilled Worker（技术工人）</td><td class="portable-table-number">1,390</td></tr><tr><td>International Graduate（国际毕业生）</td><td class="portable-table-number">542</td></tr><tr><td>ELSS（入门及半技术）</td><td class="portable-table-number">37</td></tr></tbody></table></div></figure></div>
 <div class="portable-block portable-layout-full" data-artifact-block-id="priority_heading" data-artifact-block-type="markdown" data-layout="full"><section class="portable-markdown"><h2>名额使用与提名构成</h2>
-<ul><li>2025 年最终 6,214 个名额全部使用，比 2024 年少 22.3%。</li><li>其中 6,195 个属于 Skills Immigration，占 99.7%；19 个属于 Entrepreneur Immigration，占 0.3%。</li><li>2025 年共作出 6,553 个 Skills Immigration 申请决定，其中 6,195 个获得提名，正式申请批准率为 94.5%。</li><li>已关闭的 International Post-Graduate（IPG）类别仍产生 2,548 个获批提名，占 Skills Immigration 获批提名的 41.1%。</li><li>2025 年的 Skills Immigration 结果还包括 37 个 Entry Level and Semi-Skilled 提名。</li><li>Skills Immigration 获批提名人的时薪中位数为 $41.42，Skilled Worker 年薪中位数为 $105,000。</li><li>38% 的 Skills Immigration 获批提名人位于 Metro Vancouver 以外，高于项目 35% 的目标。</li><li>Anti-Fraud and Investigations Unit 在 2025 年完成了超过 2,000 次审查或调查。</li><li>Entrepreneur Immigration 申请由 42 增至 65，增长 54.8%；获批提名由 28 降至 19，下降 32.1%。</li></ul></section></div>
+<ul><li>2025 年最终 6,214 个名额全部使用，比 2024 年少 22.3%。</li><li>其中 6,195 个属于 Skills Immigration，占 99.7%；19 个属于 Entrepreneur Immigration，占 0.3%。</li><li>2025 年共作出 6,553 个 Skills Immigration 申请决定，其中 6,195 个获得提名，正式申请批准率为 94.5%。</li><li>已关闭的 International Post-Graduate（IPG）类别仍产生 2,548 个获批提名，占 Skills Immigration 获批提名的 41.1%。</li><li>2025 年的 Skills Immigration 结果还包括 37 个 Entry Level and Semi-Skilled 提名。</li><li>Skills Immigration 获批提名人的时薪中位数为 CAD $41.42，Skilled Worker 年薪中位数为 CAD $105,000。</li><li>38% 的 Skills Immigration 获批提名人位于 Metro Vancouver 以外，高于项目 35% 的目标。</li><li>Anti-Fraud and Investigations Unit 在 2025 年完成了超过 2,000 次审查或调查。</li><li>Entrepreneur Immigration 申请由 42 增至 65，增长 54.8%；获批提名由 28 降至 19，下降 32.1%。</li></ul></section></div>
 <div class="portable-block portable-layout-full" data-artifact-block-id="priority_chart" data-artifact-block-type="chart" data-layout="full"><figure class="portable-content-card portable-chart-summary" data-artifact-id="priority_change" data-artifact-kind="chart" data-chart-id="priority_change" data-portable-visual-title="2025 年重点类别提名结果与 2024 年对比" data-portable-source-host="true" tabindex="0" aria-label="2025 年重点类别提名结果与 2024 年对比" aria-describedby="portable-source-tooltip-13"><figcaption class="portable-visual-header"><strong>2025 年重点类别提名结果与 2024 年对比</strong></figcaption><div class="portable-inline-source" data-source-id="report2025"><div class="portable-inline-source-content portable-source-tooltip-content" id="portable-source-tooltip-13" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 2025 年重点类别提名结果与 2024 年对比</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: priority_outcomes</span><p class="portable-source-description-data">选择用于“2025 年重点类别提名结果与 2024 年对比”图表的已核对数据行。</p><pre class="portable-source-query-data" aria-hidden="true"><code>SELECT * FROM priority_outcomes</code></pre></div></div><div class="portable-table-scroll"><table><caption>2025 年重点类别提名结果与 2024 年对比 data</caption><thead><tr><th scope="col">类别</th><th scope="col" class="portable-table-number">同比变化（%）</th></tr></thead><tbody><tr><td>公共医疗临床岗位</td><td class="portable-table-number">84.1%</td></tr><tr><td>Skills Immigration 整体</td><td class="portable-table-number">-22.3%</td></tr><tr><td>建筑</td><td class="portable-table-number">-46.4%</td></tr><tr><td>兽医</td><td class="portable-table-number">-47.9%</td></tr><tr><td>科技</td><td class="portable-table-number">-53.4%</td></tr><tr><td>幼教</td><td class="portable-table-number">-68%</td></tr></tbody></table></div></figure></div>
 <div class="portable-block portable-layout-full" data-artifact-block-id="section1_summary" data-artifact-block-type="markdown" data-layout="full"><section class="portable-markdown"><h2>重点类别变化</h2>
 <ul><li><strong>公共医疗机构临床岗位明显增长。</strong> 获批提名由 <span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-14"><span class="portable-source-value-text">641</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-14" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 641</span><strong>Source: BC PNP 2025 年统计报告及年度回顾</strong></span></span> 增至 <span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-15"><span class="portable-source-value-text">1,180</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-15" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 1,180</span><strong>Source: BC PNP 2025 年统计报告及年度回顾</strong></span></span>，增长 <span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-16"><span class="portable-source-value-text">84.1%</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-16" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 84.1%</span><strong>Source: BC PNP 2025 年统计报告及年度回顾</strong></span></span>。雇主性质已经成为医疗类申请机会的重要区别。</li><li><strong>Priority Technology 明显收缩。</strong> 获批提名由 <span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-17"><span class="portable-source-value-text">1,302</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-17" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 1,302</span><strong>Source: BC PNP 2025 年统计报告及年度回顾</strong></span></span> 降至 <span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-18"><span class="portable-source-value-text">607</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-18" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 607</span><strong>Source: BC PNP 2025 年统计报告及年度回顾</strong></span></span>，下降 <span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-19"><span class="portable-source-value-text">53.4%</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-19" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 53.4%</span><strong>Source: BC PNP 2025 年统计报告及年度回顾</strong></span></span>。2026 年科技类申请人的主要机会集中在 HEI。</li><li><strong>Childcare、Construction 和 Veterinary 的获批提名均大幅下降。</strong> 2025 年有限的名额主要用于处理历史库存和公共医疗机构临床岗位。</li><li><strong>HEI 是 2025 年唯一发出新 Skills Immigration ITA 的类别。</strong> 全年发出 <span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-20"><span class="portable-source-value-text">978</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-20" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 978</span><strong>Source: BC PNP 2025 年统计报告及年度回顾</strong></span></span> 个 ITA，其中 <span class="portable-source-tooltip portable-source-value" data-portable-source-host="true" tabindex="0" aria-describedby="portable-source-tooltip-21"><span class="portable-source-value-text">748</span><span class="portable-source-tooltip-content" id="portable-source-tooltip-21" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 748</span><strong>Source: BC PNP 2025 年统计报告及年度回顾</strong></span></span> 个转化为正式申请。</li></ul></section><div class="portable-inline-source portable-source-summary" data-source-id="report2025"><div class="portable-inline-source-content portable-source-summary-content"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 重点类别变化</span><strong>Source: BC PNP 2025 年统计报告及年度回顾</strong></div></div></div>
@@ -98,9 +83,9 @@ html:not([data-portable-source-tooltips-ready]) .portable-chart-summary>.portabl
 <p>Childcare 从 115 分降至 102 分，Health 从 108 分降至 84 分，Construction 从 108 分降至 88 分，Veterinary 从 100 分降至 72 分。Childcare、Health 和 Construction 的分数下降伴随稳定或增加的邀请数量，机会改善较为明显；Veterinary 全期累计不超过 25 个 ITA，实际机会仍然有限。</p></section></div>
 <div class="portable-block portable-layout-full" data-artifact-block-id="sector_chart" data-artifact-block-type="chart" data-layout="full"><figure class="portable-content-card portable-chart-summary" data-artifact-id="sector_scores" data-artifact-kind="chart" data-chart-id="sector_scores" data-portable-visual-title="CARE 与 BUILD 最低分数走势" data-portable-source-host="true" tabindex="0" aria-label="CARE 与 BUILD 最低分数走势" aria-describedby="portable-source-tooltip-31"><figcaption class="portable-visual-header"><strong>CARE 与 BUILD 最低分数走势</strong></figcaption><div class="portable-inline-source" data-source-id="ita2026"><div class="portable-inline-source-content portable-source-tooltip-content" id="portable-source-tooltip-31" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for CARE 与 BUILD 最低分数走势</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: sector_scores</span><p class="portable-source-description-data">选择用于“CARE 与 BUILD 最低分数走势”图表的已核对数据行。</p><pre class="portable-source-query-data" aria-hidden="true"><code>SELECT * FROM sector_scores</code></pre></div></div><div class="portable-table-scroll"><table><caption>CARE 与 BUILD 最低分数走势 data</caption><thead><tr><th scope="col">邀请日期</th><th scope="col" class="portable-table-number">最低分数</th><th scope="col">Category</th></tr></thead><tbody><tr><td>2026-05-06</td><td class="portable-table-number">115</td><td>幼教</td></tr><tr><td>2026-05-06</td><td class="portable-table-number">108</td><td>医疗</td></tr><tr><td>2026-05-06</td><td class="portable-table-number">108</td><td>建筑</td></tr><tr><td>2026-05-06</td><td class="portable-table-number">100</td><td>兽医</td></tr><tr><td>2026-06-02</td><td class="portable-table-number">111</td><td>幼教</td></tr><tr><td>2026-06-02</td><td class="portable-table-number">100</td><td>医疗</td></tr><tr><td>2026-06-02</td><td class="portable-table-number">101</td><td>建筑</td></tr><tr><td>2026-06-02</td><td class="portable-table-number">92</td><td>兽医</td></tr><tr><td>2026-07-09</td><td class="portable-table-number">108</td><td>幼教</td></tr><tr><td>2026-07-09</td><td class="portable-table-number">96</td><td>医疗</td></tr><tr><td>2026-07-09</td><td class="portable-table-number">97</td><td>建筑</td></tr><tr><td>2026-07-09</td><td class="portable-table-number">88</td><td>兽医</td></tr><tr><td>2026-08-06</td><td class="portable-table-number">102</td><td>幼教</td></tr><tr><td>2026-08-06</td><td class="portable-table-number">84</td><td>医疗</td></tr><tr><td>2026-08-06</td><td class="portable-table-number">88</td><td>建筑</td></tr><tr><td>2026-08-06</td><td class="portable-table-number">72</td><td>兽医</td></tr></tbody></table></div></figure></div>
 <div class="portable-block portable-layout-full" data-artifact-block-id="hei_heading" data-artifact-block-type="markdown" data-layout="full"><section class="portable-markdown"><h2>High Economic Impact（HEI）邀请趋势</h2>
-<ul><li><strong>分数路径仍处于高位。</strong> 2026 年 HEI 分数路径主要在 132–138 分之间波动。当前门槛低于年初，但整体仍处于高分区间，暂未出现快速回落。</li><li><strong>高薪路径持续下降。</strong> 时薪门槛由 2025 年 5 月的 $105 降至 2026 年 8 月的 $55。我的判断是：候选池持续缩小，高薪候选人的补充速度没有跟上邀请速度，因此门槛持续回落。工资和年薪达到要求的申请人，应及时核对 registration、NOC 和薪酬证据，把握当前机会。</li><li>2026 年工资路径覆盖 NOC TEER 0–3，并同时设置年薪条件。</li></ul></section></div>
+<ul><li><strong>分数路径仍处于高位。</strong> 2026 年 HEI 分数路径主要在 132–138 分之间波动。当前门槛低于年初，但整体仍处于高分区间，暂未出现快速回落。</li><li><strong>高薪路径持续下降。</strong> 时薪门槛由 2025 年 5 月的 CAD $105 降至 2026 年 8 月的 CAD $55。我的判断是：候选池持续缩小，高薪候选人的补充速度没有跟上邀请速度，因此门槛持续回落。工资和年薪达到要求的申请人，应及时核对 registration、NOC 和薪酬证据，把握当前机会。</li><li>2026 年工资路径覆盖 NOC TEER 0–3，并同时设置年薪条件。</li></ul></section></div>
 <div class="portable-block portable-layout-half" data-artifact-block-id="hei_points_chart" data-artifact-block-type="chart" data-layout="half"><figure class="portable-content-card portable-chart-summary" data-artifact-id="hei_points" data-artifact-kind="chart" data-chart-id="hei_points" data-portable-visual-title="HEI 分数门槛" data-portable-source-host="true" tabindex="0" aria-label="HEI 分数门槛" aria-describedby="portable-source-tooltip-32"><figcaption class="portable-visual-header"><strong>HEI 分数门槛</strong></figcaption><div class="portable-inline-source" data-source-id="ita2026"><div class="portable-inline-source-content portable-source-tooltip-content" id="portable-source-tooltip-32" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for HEI 分数门槛</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: hei_points</span><p class="portable-source-description-data">选择用于“HEI 分数门槛”图表的已核对数据行。</p><pre class="portable-source-query-data" aria-hidden="true"><code>SELECT * FROM hei_points</code></pre></div></div><div class="portable-table-scroll"><table><caption>HEI 分数门槛 data</caption><thead><tr><th scope="col">邀请日期</th><th scope="col" class="portable-table-number">最低分数</th></tr></thead><tbody><tr><td>2025-05-08</td><td class="portable-table-number">150</td></tr><tr><td>2025-10-02</td><td class="portable-table-number">140</td></tr><tr><td>2025-12-10</td><td class="portable-table-number">138</td></tr><tr><td>2026-02-04</td><td class="portable-table-number">138</td></tr><tr><td>2026-02-11</td><td class="portable-table-number">135</td></tr><tr><td>2026-04-22</td><td class="portable-table-number">138</td></tr><tr><td>2026-05-14</td><td class="portable-table-number">135</td></tr><tr><td>2026-06-18</td><td class="portable-table-number">136</td></tr><tr><td>2026-07-16</td><td class="portable-table-number">132</td></tr><tr><td>2026-08-20</td><td class="portable-table-number">132</td></tr></tbody></table></div></figure></div>
-<div class="portable-block portable-layout-half" data-artifact-block-id="hei_wage_chart" data-artifact-block-type="chart" data-layout="half"><figure class="portable-content-card portable-chart-summary" data-artifact-id="hei_wage" data-artifact-kind="chart" data-chart-id="hei_wage" data-portable-visual-title="HEI 时薪门槛" data-portable-source-host="true" tabindex="0" aria-label="HEI 时薪门槛" aria-describedby="portable-source-tooltip-33"><figcaption class="portable-visual-header"><strong>HEI 时薪门槛</strong></figcaption><div class="portable-inline-source" data-source-id="ita2026"><div class="portable-inline-source-content portable-source-tooltip-content" id="portable-source-tooltip-33" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for HEI 时薪门槛</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: hei_wage</span><p class="portable-source-description-data">选择用于“HEI 时薪门槛”图表的已核对数据行。</p><pre class="portable-source-query-data" aria-hidden="true"><code>SELECT * FROM hei_wage</code></pre></div></div><div class="portable-table-scroll"><table><caption>HEI 时薪门槛 data</caption><thead><tr><th scope="col">邀请日期</th><th scope="col" class="portable-table-number">时薪</th></tr></thead><tbody><tr><td>2025-05-08</td><td class="portable-table-number">$105</td></tr><tr><td>2025-10-02</td><td class="portable-table-number">$90</td></tr><tr><td>2025-12-10</td><td class="portable-table-number">$84</td></tr><tr><td>2026-02-04</td><td class="portable-table-number">$70</td></tr><tr><td>2026-02-11</td><td class="portable-table-number">$62</td></tr><tr><td>2026-04-22</td><td class="portable-table-number">$62</td></tr><tr><td>2026-05-14</td><td class="portable-table-number">$59</td></tr><tr><td>2026-06-18</td><td class="portable-table-number">$62</td></tr><tr><td>2026-07-16</td><td class="portable-table-number">$58</td></tr><tr><td>2026-08-20</td><td class="portable-table-number">$55</td></tr></tbody></table></div></figure></div>
+<div class="portable-block portable-layout-half" data-artifact-block-id="hei_wage_chart" data-artifact-block-type="chart" data-layout="half"><figure class="portable-content-card portable-chart-summary" data-artifact-id="hei_wage" data-artifact-kind="chart" data-chart-id="hei_wage" data-portable-visual-title="HEI 时薪门槛（加元）" data-portable-source-host="true" tabindex="0" aria-label="HEI 时薪门槛（加元）" aria-describedby="portable-source-tooltip-33"><figcaption class="portable-visual-header"><strong>HEI 时薪门槛（加元）</strong></figcaption><div class="portable-inline-source" data-source-id="ita2026"><div class="portable-inline-source-content portable-source-tooltip-content" id="portable-source-tooltip-33" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for HEI 时薪门槛（加元）</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: hei_wage</span><p class="portable-source-description-data">选择用于“HEI 时薪门槛”图表的已核对数据行。</p><pre class="portable-source-query-data" aria-hidden="true"><code>SELECT * FROM hei_wage</code></pre></div></div><div class="portable-table-scroll"><table><caption>HEI 时薪门槛（加元） data</caption><thead><tr><th scope="col">邀请日期</th><th scope="col" class="portable-table-number">时薪（加元）</th></tr></thead><tbody><tr><td>2025-05-08</td><td class="portable-table-number">105CAD</td></tr><tr><td>2025-10-02</td><td class="portable-table-number">90CAD</td></tr><tr><td>2025-12-10</td><td class="portable-table-number">84CAD</td></tr><tr><td>2026-02-04</td><td class="portable-table-number">70CAD</td></tr><tr><td>2026-02-11</td><td class="portable-table-number">62CAD</td></tr><tr><td>2026-04-22</td><td class="portable-table-number">62CAD</td></tr><tr><td>2026-05-14</td><td class="portable-table-number">59CAD</td></tr><tr><td>2026-06-18</td><td class="portable-table-number">62CAD</td></tr><tr><td>2026-07-16</td><td class="portable-table-number">58CAD</td></tr><tr><td>2026-08-20</td><td class="portable-table-number">55CAD</td></tr></tbody></table></div></figure></div>
 <div class="portable-block portable-layout-full" data-artifact-block-id="pool_heading" data-artifact-block-type="markdown" data-layout="full"><section class="portable-markdown"><h2>2026 年候选池变化</h2>
 <p>总注册人数由 6 月 2 日的 9,902 降至 8 月 4 日的 8,306，缩小 16.1%。候选池缩小与同期大量发出 ITA 同时发生，整体竞争压力正在下降。</p></section></div>
 <div class="portable-block portable-layout-full" data-artifact-block-id="pool_chart" data-artifact-block-type="chart" data-layout="full"><figure class="portable-content-card portable-chart-summary" data-artifact-id="pool_snapshots" data-artifact-kind="chart" data-chart-id="pool_snapshots" data-portable-visual-title="技能移民候选池快照" data-portable-source-host="true" tabindex="0" aria-label="技能移民候选池快照" aria-describedby="portable-source-tooltip-34"><figcaption class="portable-visual-header"><strong>技能移民候选池快照</strong></figcaption><div class="portable-inline-source" data-source-id="ita2026"><div class="portable-inline-source-content portable-source-tooltip-content" id="portable-source-tooltip-34" role="tooltip"><span class="portable-source-tooltip-heading" aria-hidden="true">Source for 技能移民候选池快照</span><strong>Source: artifact snapshot</strong><span class="portable-source-meta">Table: pool_snapshots</span><p class="portable-source-description-data">选择用于“技能移民候选池快照”图表的已核对数据行。</p><pre class="portable-source-query-data" aria-hidden="true"><code>SELECT * FROM pool_snapshots</code></pre></div></div><div class="portable-table-scroll"><table><caption>技能移民候选池快照 data</caption><thead><tr><th scope="col">快照日期</th><th scope="col" class="portable-table-number">注册人数</th></tr></thead><tbody><tr><td>2026-06-02</td><td class="portable-table-number">9,902</td></tr><tr><td>2026-07-07</td><td class="portable-table-number">8,683</td></tr><tr><td>2026-08-04</td><td class="portable-table-number">8,306</td></tr></tbody></table></div></figure></div>
@@ -451,178 +436,178 @@ html:not([data-portable-source-tooltips-ready]) .portable-chart-summary>.portabl
 })();</script>
 <div id="data-analytics-portable-reader" aria-hidden="true" inert></div>
 <template id="data-analytics-portable-artifact-payload-source" data-compression="gzip-base64">
-H4sIAAAAAAACE+19+W8bV5Lwv9LQTIBvAsohKV4SPnxANuOZeJGZBHF2F4vZQKCltkSEIjU8fOwg
-AGVb1mFJlGNZsi3JthLbUmzrcGzLkqjjf0nYTfKn7J/wVb163f369cGWI88giwFyiM3u6qp6db+q
-x7915L/q6CkVymqo42Kmf0At9ZYuD6sdPR3pQilzPt1X6gh1FMsF+AsvFtThfAEvDaVzmfNqsdTR
-87eOC2qhmMnnOnoirreWMqUsXviXj5TP/vyZEg1H4z9WbsH/Ekpj7mVz842+tFffv9fcvqFNHumT
-j7Wbk/BUv1rsK2SGSwxwR6O2r82OazfHGzNbigBI0XZfaaNr8F/99pY+vfHz/lS99lirTurjT5tj
-LxX2FvhWSSn60jh8VPSFx41711pXKvji21utsepPlRFt/Dr+vbCmry5q30xplbutyoT+4qFWvaNN
-zf9UuQIIDag5tZAuqf0fAtEdCLgznOqMJr6IJHrCYfinM5yE/8KdfelCf7Gj5y9/68j0w63FTDSO
-BKVL6aKKzxbLQ0PpwmVkbL5c6FPP9JvsQprM68jbv5ZVuBP+KP41C3edPf3J6Y++UIqZ3lx+KJNL
-I3uKvYwTf/j80z8pFmg7/5CcG9835tbqezPNzcf61Jj+cAz4oL35QX+4o23uEvuIUjU3kMmJIqAU
-c+nh4mAeVzObzg2U0wP4NaIEy5s+l1WLveWiCmT8xSTuy6+/BilRS4VMH/Eimz6nZolzbNmUs19l
-stmicmZoKDNQYJQozZk3+sSuXp3VZqcB9PmMmiUOOsjFb/OFoTTyM1ceOqcWOr7+8usQZ3l6eLiQ
-v5DOvgvGG7B7URgYLiG39WAX+9W+TPF/1xLB+mhj1xszYz/vj7/38/6EfZmczHFbqJD1ql+24gIg
-MiXa9Zfaxj07IPsi+AtOXz7HrdmJi06mlGYI9J4vZ7O9l9V0IcSu0SvBrnCxsa4hGhYj/1dIz5kv
-PhQWx8mSNousr3+n7VdpqSU4dja2k7qD52DXXYXYi/3+cnMRGHbiEjOk9mfSud5BuC17uRdf8esU
-BH2y0rx60Fit6Vs3SdPre3v6wnZz/ml9Z71+MA0oCSvgQba4AH3lQkHN9V0Wl6CgDrwLtc2XS8VM
-v9qLBOZ7i4Ppwq9sFVy5//PBkvZoVd/5HqOlR/P65lz98IZTGbyIb+N9s9l834kvBIPKrMiv1Bzy
-sFVfqjRq47AMrW+XBVZL5AXhcMJBthHuat/e1yYfKpFQOBxW6jtP6W3a7Ayy4OCWNjGtV2p0kVjQ
-ZqFy6sUiwj72MiVC4oV+NVtK/5oWjpjJGNZmwRLtPM7hVSthYVmFOyjGIhdYwPjMQA4xx1xNEIUM
-uKpcKe/CSvN1+xVt9QbYW+ChtrSm7d3S1u+A4QWu8vyLpUGg/Y29J/A3mIBAQnE8Mzqs5jK5gV4T
-3V+pK1t6oI0vEwtFO+lKnb8OQ6DhosE8bxXTVchpDVEUbTlwobGy0dx4BBwBm1I/mLEntQFWEFEI
-ptU8Ukv0Xi7190JcHpKupC/96tS6eXStXptUzp7BoPTHyhz8Q2zUKvvOGNWkvI2e+0NvPbvjBz19
-yV9khvP5rIO12sYdfX6XS0wMBcYqXxw9a4yukqrbwoCXa9r1KQzCbm+dsKAgir3p8kDsVyMPJrdE
-rtCKCTwV1swk0X2xvgx19EGgVBIqQJZ9d5bD0ECD2WWBmeljiuVzxm2W5bHChvrOjOLmnbSxh/Xd
-mcbijjY7RazjtbxzLLOyFtmGkLufh/A63w82rYhLfAn/Y9KvFjL5fgs4JepZthacpbuv6rUD0IuO
-y+KDdjbQw38tp3NAKly9oAoQbPzAlbv84aVM8QvOE4lbF9LZsvoHh8PMpi9D/ApXMLsMILrvk8ja
-sPSW2h8rS54r+GNlWVs8bK6sOSW6uTJ1AkIt4AhybdoHq2QCluqSIGt+Kbk2e005Wyqo6SFb+U2/
-f00fn7XLIrqcWlUbfdlaQJOinPnsjwr5Qm36Ybt6Hj4Qi5yKvOcrmQ4SPAMOtVQyxDNfyIDbTfNV
-GoSP/52Hz1mUQG85LjKie/szxWEQFT95JvY45FmoUAUUaDIuTKAvOQWafysJO3/5SYu5g9G+ov7W
-AvTOVUGiQ1SHYbBThUzpci/Y49yA6qIPrbHpxpXdxouaNv6MS2ntln5/iRvYGNNtwHdzTlKE0efa
-6AttqtaYX9CX9oDU+g4YgUnth4X6wTRkX63bRxC2NStT2uh2vTYvvgd98dx2Y/97bXcU7EZze7R5
-NGbzzrdf1Q9u+WqJSRmsfF9+SC2+U0UZUtPFMmT+ATSFSHRoCi1A7zDbTfJXFHBdwG5KkYyChENf
-3G6S1IZj4qk25VwGP7/39hrktgiBlCi41L1z7XHSICoQ1UKHhtOFTNEWu4jiagW4sCpa9Tvt8Jqb
-yvgnNghEocwF6CSd4Pky7e5VavAVcKG+N6dVpn2Vw4G1eyD7i9UiQBzE+AA5Y2vhlUMnEE3KJ9p4
-DkpKjGyPldCdDsTlJkkhbMictDdx8NxXEQKJzzuXfQlnh+CnS+oA1VV8ZBijGjMUn+X7yqTafBEE
-Hfj49BmlXpuGYKm+U9M293G3+uC68tGHn59WUPn/5d/OfPJ7BYgFC6HPb2kH34IH1Zcm9GvV+u4E
-vAoIr+/c43k+2zVvrwlERkb2ESepCQargngIkUP/cJ2wIfNOdELkvr9OHFu2/j4KYhEgKkhR7Svl
-C73FvnyBkWZIuCTKfAlYd0Xz9ZY2eeRIbsn8x5Fsk37QC21xsb7zFPRAezQtEm4WuwiotjymT400
-auv1nRutu3a/kEXKbaUNCWlXbfCWcgCkWtBL6hAEWS6iDQsHRtYh2uytQQWb0YYg+vLZfMFN1fxU
-7CPjHmfiLII/aXmX2esr7m0F5Z1Ltx1dUbgH1UzvcD6TK4mSjbZbbBNyF2ROwZtNdGNLa0qkK/pj
-5VakK4XP1ndvgO/VX36rTa6BiBMc9AePIKyZaT27A7mDvwTbMPu7im9pELg0mM/2H1OEf6EEDqaz
-54NLoI09vuInr+Y7lzYBNVnUcIdbEjTaHHcTNPGbxtwLc0+JLCh6jN9GwnEFbKGz/Y19G4+3FzGO
-0d9VwITt/vYixpjg3hDgEDjjXruomQ/8ImHj2LYVNXHV/i6ixhCz1UKwaG0AKXqkctLGgVTzWFqj
-BdSqk1TVwPx7co38r1a92Zh7QNkF2DaqpZvwUFITFNlgYGMFOqy2jrWQraoSSbQrDjqIOGkJJbo9
-JBQbTIqlQtCCn7Cb4CKV4rcn7YgdbAqcjEkC8O7LD3ZMUWC/NG6ytk9YdxjrE2PfuNTxeJEA8Du6
-SntJkuxuTOm3X/H2YbMMs7LbWNxoHs0CLfrVUe3665/3F0nEf6qM8H7C6iRVaFp3tvWN1+isx69j
-GFp70NxYkffOzDa2XtuuuLMm16+eT5ezpbPYIO0stOENmQKEJ7Re6WIfDwXLQzlii/MBU+wM6k0h
-v1RiG5TGI0zUEL+Y8JRRdfLY3HQ8G7c/Gw/wLC8BWhmiqXNSFc8LcfCdamG4oJaMvRmztWL1u+Zm
-TX7yy8Dq4li1QEU8p8iBtoCq6A/335W2SIi6lrq9NMRWgWbVRiq6NKeuaouvIBAnAberTb32GPKq
-+s6eWKXE5Gx3u7V8X+hnuamN7Zld9bJWHKdY7aEYfflyrmQuj6AbuFTBlcNM9L1kzHyPm3JYTcp+
-Yi5i6ugeCQThlyoKZDTDNqqZraKFfnstOZFqt4/kvXPt8S91myUsWYHaDJIYhWtAU39ypbk6bteg
-xqtN4D3dNDVBrRq8nMFYob8Y0ys18Dv0FTZBPNoDhVP+b1wxFQrUkJgFDGoeHsr6FazK56YhLnU7
-1zKdj1GGdxdVkHgnBCKdbAOvvflIbEHtLfBNOlPeqcIztUcFa6+HC+pQuvBVUXzw0RjEV28v6m9V
-uAssIO9c0F3KdibtQlRls7sG66TRKjIdNJOFYT/rdNAW77dWDuGhwYJ6HtOmUmm42PPBBxcvXjx1
-Uc2ibp3rO9WX/iDDN4nVzlK+81xn3wfn+jqHc8OdRXThxVKmL53tJCw68YWdw/3nO2ztcSS5Bm7/
-QbABRTFkJUFtbmxpB7fJsNg7Y+ibt8E2fQ4sRWdpUO1EvAv5C5lcXwZQZgU3VcVLcP/QB5nchQwF
-JUV8ND08nL0s0xF/OzrIva7f0Ve++wX8dkOws5hxYbrQ/+PEluJlfX6rtVADYRBK09jzoi++gq/e
-JZ8ROQvVgXKmX5Vw5dLr0qPwGcFQ/ohP2cWEJ6YRUljIYW+P/xLZzhj4djIMib+gf+ey+b6vBPUj
-D2HaKLRh/fmLGNeey/eDaer4jXKcgUlbZR4ojvQOqmnMgv1fcZbuViI/Hyy5jlWSsv9X7r9y/095
-//3m62v6/N3m5iv9zszP+/fefx9Y97w5eYXu0h/ughEz0Abr6DCKCdaeCC5h5ypYv58qk8aKWRZB
-+ZxZBCWd61f+E2JdJZODSxcy6kWG2U+VG5DJNWavg6FErH7zG4Vi8ObqFQgzIJyAP7TNB+BVwcPi
-HZ2At2nP7l2ju1sLG61v7+h3Nkl4G69Wtf2HOPk5c12r/kA9TfAGIFBo8hpfRnu9NNHYe6LEQ1Fs
-ra8d0Io01ie0w1Ht0TXADMsfrFlPSYSikZjQfz+61rq6Vj84At/B0EfUUJ/I136Pjg7iam1nB17S
-ujtLCPB1qD7lrrQ7mUKQHtNV1HVS35mjl+nLj5tjT5WPMwODyum+PKpUHzwyDC4FAsnWszuNWlV/
-PaMdvNBuTcOzjY1KY3VL+fj0GYgxzXCeMG0eLWqjj8URLIrcaKyAulaoAQgrBjNbjTWcxSMifCcK
-BYjmdCHGQN2xU/H3LEbNHTXW51EC92Zbi9frO+vYzI7tMlsQOWmzNw12+bXmgNzqdw7NBh1WmwMh
-IBbPbdZ3KsRlWBUPBmNYRmGRiRmEKNqDB9rWi/rOvUZtlVXDFrTxLYh8m6vXCa2u1Hv4ZLsmufre
-HmCJqvMnHLlR/j2dg4ziglpQaFAHwwNT1Xk3q5FtGGrOroKThYiFDyOfYePIwlwOH0m2jclKo4/m
-RJs5VyWNn1DPFWt1tV5ufGT/P+No+rQXtCxCMpfaA3I0rHkAM+P8IAbwNwrvqGVKCdZD7F0j62Fv
-wPXTaVT8zTmrhWfrphKNnuoyRBiLpjvrACDSHWcAXtzHhXZKBGbY0w+V7u5TSUj1FiPdwt2ncyUI
-mQpqTi0XXJ4JW6+z7PiL+sESWo5EKB7v8rId4vwsApOQBSHVDheIO0hnEJ3FeROrVxTLN7R+YOQ/
-yxdLnX8spPvL4ELBEp357I9gcEiv6jVQgFXwxEo0FI+l+NtNFeGUHqPbVOSGhw5SNtY8ggx7VL/x
-XOlKMj4hty8rn6gX1CxzSGfVoUwne1ztV+hFHH57vUYbaZ95RH79FpCMRYEmA+p/5AtfgbrjCIF8
-ayQcx4Eu/sYTsii4EfnsDu4/svBO6YozsBjpPRzjr/owV8p0/qGQLvczLpwBQwHOeoBCSuXfcpmS
-gpudpsRtTIH21PeuG31cbAxNf76iQS7x4LE+Pt/cugp/cOheIs1FEvcOYlEFbDamWYk4rj+z30o8
-diqFCmJbd9wTSxn7X5FubLFhrQFKV5RvL7j2h/rbHmcnqYfxMaMva/DBaXy8il+WURJrJlT2MSKZ
-4O6N/I7Mm0QsYrAyEoqkwhY3UzHiT2sRFLmmV1abr9ao4RsXc2eP3gk4iTEo1ijAyz0ZQR8ouMTP
-OMOUL9S+wVw+mx+4rBBy1Pvqjlwk1BWOGmuXCCetxYt3nYohckZA2Vi9CcmTiQypF6ANmBBiZoSA
-sYyJ1keDmWw/eET1p8rIRyC7pUKZ4l8I/ZR/V8FCgYsBjcdWKwE3bXlMe7Sq7Y6aXSZCSEOxGibz
-fDYDkaDqAMWDYkyJIabvCpqo8tDEUqrjRydC8GiLHClM5BY+yS0sm4jHUq9g2W3awkU7erzEIgqJ
-hZjAYEHQGFODZIFa/TBqZ8mMy9v8FMlSGDtsnhmxcoupOPsVVr5gqzAD3y+SPLot6Vs6LtPuWY7L
-cllMfvTtceTy3nUpz6DQWsioZ9DHLr7SHt3jYUZ1E8w1lypDBnh1yRQZcf6PW4LF+9r0mEmcY2AI
-3QoENPEYYlh9yqMXx7wRoKHE2CAxWFv3Rl63uQCaFmHYwhMYDsVCKYJjw5s0lhTHpreolmQKmyPY
-+ChKNn4NiRiGArYmYmYHJqjbpr6H9TRR6T9W09nSIFN3m/6j+rJyY333gdRQBiJqhmmWfzbtDnKO
-cdQ6VciPHFSvpTVY7+bKFM/7mAk1zb2VVZib52x73GwY0ucOtY0Drt7GPbSTTDhjSV2QBJoFx475
-hW3cppnZEvquzcStsb4IkBozm9q3V8VZZR1L9Htg47Tx73nKDYK2VEFD+3JNv1alMoC9mMJGHDBb
-o6IQ9yJg+J9eM/PpnZ3mqnvwwpqn4F1UTviLT52Gagjtyj0/VW58+X9OpJDzO5c4DSSJC9WH5dIg
-OT2w2xA/oZaNL9DOmEEuG5PBpaxcAWUmqQbvAQLWeP5Emx3Xl1fqtW1U7D9/+pHyxenTnysQ741E
-4N+oAoGT0oUSOfPAPzLl0zjA9/rOtHZ9GvGZ2QKJs6EBkMCjQFgGvh7f+AX1QwDYz8uFdPaDz9Wh
-fEk1qDtbHmZ1mTMQ7WVYswO2MjefXG8szutTY5A1IJkbE/WjZRTznVH91Qi5NNQQiqqRpkQsFkGS
-EvEuWEpkH/4VZa4eHMF0c+NQOX0ay42VCQhJBZ/vLTLuGkfcA8fTBVaLfYjBB5Dq6lNUQbajYjpv
-8MGoHxsT+sw3GHUfLTdu38W0a/yZ1WgtZ97HS7qtQxvEmX1jDJzN9lopdp5xG4dUgiaykpdFhV96
-wEwiOVlUXWuvIu7Yq/Aw4lbdKWYFD4vSpgezLgiB7Lxo+S2bLyylVymJdfcit81AFkyXjfP2pv32
-kbtjMMEjcDe3woJBtLpw28FjmzO9rPor7EgZm4z4/zOu+49ecMul/PnzAUXClkaQe7P7BpQJ0z2C
-Ps8okUgcGyON/AnCcfiElTKyAuyWcEq4JRXjd9j8qct9KX6fEGbTXWHhriR737GdNvm9/Vete1Wq
-OoKpJOGRzvpjtVkmYHO72vw18HTo3ZiwgVQLqEHgDOpDe5holXgmGxcD6I37rbuj3PbUphvXts2y
-bYfcKN9WquTmaY/lx96+YGvvUfIVK7sUJpsBstC67GxKFn281TzL72aG17fdGb0Wi5J40/PBDAay
-rKZOQzAUhYjvxUYrtveLa3bvir70lKIX7ehZq/IAItvm7IEV+j6705x/SuhI8RtuUpxI06w+fpNJ
-3CN9fh08KgQ+1tEB7JVWoMawoW8pNW2uPNZGRxHvvSf6DysgKM03D+o7k7QQdJ1NPTzU1x/xOI/6
-Kg06tTePm6+vYf7IKkPNw0NtfAujsBdXzINceDi6N4dtawvbtLWsiH2LoE3ohAEMMmT0eXNzhE7N
-1Ccn9eoKPxvIcHi8cEYmnr2fOExeXwhRyMliXxDFmeDEGwcbhCmFNDalsJqh2yuGrafb3qrr6KIO
-Bo037XrAYi2JgT0uscZ+XChztJWa2OIp9b+iTHWHuq1ah9gMC9+lQl3hBO7G2BtjpYwAbDk5ecgt
-Mc43Oy0UHuyzllxcW4rwn92v703w1JdlIdbMjJ369uUwucHUy1nlIUptw872xbD/efB0W6HtPdrV
-A80z5V17cqV+cFufvFU/qJLcIvtNFebZhuUFXtXAGtkSHHuiLMyh8uBjxM2LEuNG0BKStqL/OZjB
-o2QdaRt4GArueZ7IMi0z0Lco2XmiLz+u713HpAnC57tbZjTEEy/KKbiRW6pYN93ZpCrXSACvCbAI
-GzwmZPQlpSCIN9Nv+EOfWG2MroIF4YVAB6JmxkvI8eyOF/fQq8IrRE8KCJzuL/elDZ/Nbd5YlZym
-djhOfLL508Nl0Z8i9doS9gJhbrF4VK99x2dsQNIfvqESJMWXRk3uBHfcMImi3RdWlIPQglwZkwtp
-OM2vToBw9ubA0ppb5AdLWFhllT3kMGsEwaap8W/IGcC3RgsYsgq94t4TCG+02ZsskgHjap1mbNQP
-RiBL0tdW0FWQtNam0d8cXsXtXsx0phsrGxgjVVbtoQrTxN5sJvdV0c/y6UvP9fkxWCFsaWJ5AKob
-cD0FRiwaJhtG/WxY69yv1I9W9JFN2rZnBzSPMsIrzfHn9JVZ/0OE788Sq2gPDmtoK+P6y9va4Q39
-WrW5OoIEvr6mP9znnnh8HpYTOAApG3gzqy2Ad9QtP9b3+E7eX4J3N71NwcC7q+l37O0kNW27U06q
-VtHmnWK/0XFe+Uu6oggnv14APmHCOp7eghHtOp1+J4qBfyfTu+AJdjD9jh3o1WH280nnpwc/ZRzl
-rVxkbjPdf9nqCGVjL0bVHNuN5JMlexLRSCzkOL8QLsftl+kswp5YOOR1wF1PPBoOh9zO8e3pTqZC
-zsPTemKpWDjkPPYMrydCwtFaPSkIgUKu50D3JCLd8ZDLyc49iXi8K+RxDHUP7kyH3I4K7knGUiHv
-c397kgl80OtU2h62gRvyPiq1pyuF/V9S8z4ujNGgbpz/g0GjNQ5Ebeg9qTByWJi84MsnHKnS04lt
-BiF5QoINW1pnhtWM3cHqAjjVjpDcaN7T8Xu1D2SpqFLXAnMMAorimBDrEqAwSUY3mYpJ6LJFsaMb
-PxVzQZe2yzD0erTaHMNknm8/sJiVgi5/vAGuH96czW54J7uTUQlvJmXHZTML7bFxQ6HNGvH1v4jn
-Lueui/jnQLzs+JO8i/jTPQ70qRjH+z+ol8t4FwUNlKFj3LA+gWn7xq5+5xY1hPDGbgdZP1bmJFps
-jeBtMEfTEQBxoVMRW92kQ0UUPBvgmO1vYnUkGFn63Dbk4Uaft3kyuT+BzOAEIBD3Ia2srr6zjnEt
-mqP3FNf92mAo2yNU4IM2+4yV3J1SFU1FUnbUI13dYUkr4uFTSRfk7a8hpSMd1o6eoWawrNQ8xM9b
-MxC+rBnylosvFZFUNC5RkZBFrDN1KuKmG5uPjd0UfgTRItZUqL8PIk598pEv7gBVRp3v9rP9f37w
-jaMjQCIgEYtI+EdS0ipg94abBAmgsQbwsmY7qIyRwffB9+9oo+NuxJzJGcTEnNRQI4aYIsvM7wrL
-hjWclCWoy9UfYDV3uUJJ18T34BRY69ftxo3nrK1EoURIA3+x/8JfgrqcfkHb3ddv3/VDPJrstiMe
-C3dLiCdSbjxfWiOpBjerjW+DzPOCgtBC4otuInUq7EC3ttdYv+mDbqw7Ycc2mkhI2MYS7mwWgDb3
-ntVrB5BYgiltjRxpo9O8cYF17fhijdAdWI8egOz5YS2Zl6jscmPJU90uODdqyzQ1g3zFUtgc1ZnB
-YQHC/ngCRBlP/x4PH8sSSzkIkG17MnIq6qqZ2GCCe8SsCaRVeQjZLkvPjS1Z1pLoq5AIWialTTed
-zH9ZNyX+Y4udC/K2lwxnhlU8RkJpLVX0F1eobuaLN2vcC4q3OTRpd0ySQZQ1E7v93LgOwS/badRr
-9yHWwax/YxdlyGyAp3qN0QhMZ9Gg0a/66yzrLmSDHkLDMwb5lA118JlSfmacMFTKYscO+2MU85sJ
-Hr8H+WVBi0vQ4p7QKF/wh5aQoAmdQg5ocRs0sRsokmJHJSMXpG5t5ASdt9pe2xYPWndHGw/nGt9v
-s/r1BEt2bWe1Agzsu3K/VzyWlesjpWNMMrApWNiBZ8VuCAfVglMnGY9MrN1CDsFle+AZ6CkbxhSb
-CBhHkz4YC5VIEGau4za8HeEe+Gt9aVN785hVJV2xDvCMHWcWFYo4R8nVuOH8r/lzyqfnz2Nx1DgF
-zlM4HHKhb97GRjBvuTjW4zYi4mgMBRpSFNa6st1sEKRdARdx8WvQQXRGH7cW1tD+TE8Scz0IOv3J
-2bM+99so6EraCAifSngR0Fq+r7+qNd9ctRMAiusck7aXKgKGr/KZsVIoKgShbPTEHLunWFeYoveM
-dWnMHQ8pGCVwtJVx7AjWefSuK/pubUfG3SL+VEgQCfAsJBgUOPNX0+cdr17gGiS6rAS7TcKbxY8i
-2l7xo4G18xTbkwkP3SQHb5PxTUnoukeOb4utS5Domuo4saXbJGwpC7JJhUcW9JYIB05xXNjLbpMR
-ZtmPiLB79vOW6PIU58uQPK2OxsbsrgL3GbByM8Ga7qTTDNhZal53O04u6OnoCkUTrLIuHEfQ02H2
-tKAVFrpeCIxx+oAVNVFTMum0R0ey3GqztEZ9Nnj+kNDIIvaBiOdbGqek9nQBvvwj1tDpIzmAoUw/
-rVIiiabmfKZQLFF3EQpjCrfsS6p4iUrY2Tz+HGyHsb9b0fb3DGpZDbA2TXuQtInN5E1YLXaWI3cK
-po1xrorbbS7LEU9GHYuRSuFahFM2zpsbyuaWvbhND0wFF0ENt2afLT/7iXkMbJZhe97ObhqJ33E0
-7Sa72SeJ25EI5kt2bocd3MakUWD2+AIbp67CSjc3RwgpsUtNZjOencnZx7ypO5dd7nJhciwZczI5
-5sdkrHqBSPLhXpnVYqM+du+zHgINooK7m3wP29irFxkLWAiMZZ8kxnYH4mtM5KvIQhMzs6+BWt21
-w3FCyIfHpnn05bFxlxuP4xGnVQkzqxKJ25hsG8AQOipI+6xuf7ajTw09MifjEZGT+MnBSYc9iMQd
-9iBsswd85+jxAR/qZwg6kdJG3xBSemVVZqg2Um0eLYGU13dX9OWbJJPU6+DOW9cH3BnsYrXjYRtj
-zaoK9vPcnTVbvdHiUis+P43osf5wX2Kpzca6WFhW37ExNB6W+YlXRMmcAAxw2p9XCOfIqtYPl5uv
-54GL2Aq5d0PbuO8jlmZQ5CuWxl0uXJPbWh08TDIRDds5KZxoxDp3brbphBUYGRWtJ8ZrEiPDuGEl
-6biDk0m7o7JZH5RHsbuIDlPQtqrebASlbV75oR0bzbtc2AgsQK1wZ2FCMqJP5psHG5a/OhyvH+Co
-F3V2cYPlxjqbUrswLiIxLuGwjQmbz5EQISzEri7CgkVofeWhcpZNfPRmsB8AIjR2kCaVnTrD8A9S
-aS9NCQ8xArpj+Pvyuf78RaNchRviCnsIF0eEGAl3hqNtIcaRosAgowC1PZLJwCATgGJnOGYDmXAB
-GYt220EmlP/84vduwCKRtsBSqWDAYpBgtgUW6Up2BYIG65toDy2J7RqBoEXacy0aiQXDLSFLiiu0
-WCoeEFok1R5aMhELBC3ZGe5uC62LhTGBoEXar0JXIpkMCC3a1R5asisYtFQQCYlFu1IBoUXD7aGx
-PiIXaEZKac38oMFyVsqdU6yive0W41H8IMLDnx/i80pPF7Tqd4wExxto9NoG1GiJIqhsC9oGlj3R
-vDoFwbIDZiIA1lZzldBT5Y85sEvosPey7dbp7z0RDGVEM+plvcVnYu2e4eZZfAalxfsZy/56P5Pw
-NLO2Z+JtnuHW9Fjv4VbuWO/h1sf2TKLNM9wq2J6JtnmG65fvM1ws2KiEl1CIJ7b34NkkHelcrpzO
-8ivU0xJEUmyAcCPBBieSjLPtsCDyY4OE2aAEKdwGkiVVNkhJB04xGSdvWbNBSkRlSNEAkLgEngAk
-Lpc2SPFuB6Rwe0hcWk8AJy7DdpxSMqRIAEhcsu2Q4g5ILtThAZm2CTy70FtRkJjRGim/lUZ7xU7i
-U0Yea5Uxgjxl1MmO95SR/VnplFcE5UtXJMhTDroCvctBV6B3SXR1R72CLz+yXFjo8pREVnciyEMS
-Vd3JIA9JRKVSXnGWL1HRIE9JRKViQR6SiAqGn0RUMsr2GO3zYw5d4ytu/8GFnu5uLEoZj/Xm8iXV
-/Pnr1srr1vK3/Gcr3JiddMJLJVJdbwcvRT5Chkcd6zI8Om5FgMqsjZmKs/2OXH8GX9A7UMiXh2nf
-ggoPNAerj8/jH2xCC08HvpDpV3N9Hr9Ip42+UNhOhjCuT2USBeKWH69/A94eLtnnOmmrQfltMgw3
-/DYe/0DbquoL2/Cy/8a2fzx+UwhDzboB7hA8YjU1oYiGF3ePcOiVNRbT/gFjFw/g5boir3KD4GTx
-1+d608bp7lRqNifTaJ7UGGGtTiqnPzUHkdkcKw7FzW/xYo/MU3M2jjgrn7dx+qPTdtbG4hGRg4uL
-zYMNehk7qipizgtHmLCKfBIPQ6NpXzqth36+j49ozpiz6HiqKGME/9m//Yo+d+jBMH9WARvqu09w
-QooVu/mcVHWSz6KyYSvs7F7Z8GAStatw2aOuEirUGnvrIoOSMYeIMdaEzfPXUjGSNJ4QuTcAUCe5
-2UwrMpKfIjO3ibQdXtX293iRTyzh48/RYMWUcMSyH1X0j8dAHJbeuE8042QzMLG+cwuZyFoirXlI
-djCal4wJg5a8AMs2d/TJCkixnX3xZLQt+1IeCkiCRP2v/NDEnXVJK9+KfkJX2hf7eb+qrT/RDr8h
-bfGg3Rr5FEvPgJ2d7CgWlcVzFGykhxXzIAiJdIu6+yPOeVGyPI0b642nHqZGukMmn34jUiC80lqq
-cAFgWuRBtTnZKhaKHURTuZVb4USK/+4nswO8eixTKxWKhRqze6H2bWgmm8F/qml3mw5OxgmQGpcl
-D5r1uxutyr3WsqEt9m4xO+VsB77KD/HiG944VktmkYZAQaX4BOtLEOUF2ZiSA61uNldHzFlXvkHu
-fliY2evgwpLW3UeAOBl/OuZ4Spt9oo3flbgp86q5ea2+v8XHrMUzydAv0WQySI0wmYxjfl//89j9
-fx67/89j9/+Rx+4Pp/u+wlnNTO58HgdjjR/U+LycK2WGVHaYRYGdudRpfNWJA7Vq4dRgaSjLfvwj
-CyakcPlP+X7x9l7+9WC+WFL7P4dHPs2BAPaA+1dDHUPuNxufP8aP/NaC9Cg/NION8fblhy9/WDwz
-xAoX59PZosrwUUvCx0J6wPyg9uOP2hsfLg2zn1GyffyYoftJJveV+QVucRX7CqqaMy8NOu8axsFY
-uMrMOr8Gi4U1ROFzvtCP/aX8M9um5J/QGPLFOPPPtfhHr8XX/x/qFcKP+JsAAA==
+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
 </template>
 <template id="data-analytics-portable-reader-runtime-source" data-compression="gzip-base64">
 H4sIAAAAAAACE+y9aXfbxrYg+v3+CiqdpwauSgwpeQQN8zoaYieeYtlJHEUtQGRRhA0CDABKViSe
